@@ -1,18 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.hva.tsse.juniorleraar.Home">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/darker_gray">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/shape"
+        android:text="LOGO :-)"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="100dp" />
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_didactisch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorDidactisch"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="Didactische bekwaamheid"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/btn_collegiaal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFD200"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="Collegiale samenwerking"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_pedagogisch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00A7D3"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="Pedagogisch bekwaam"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
