@@ -41,7 +41,7 @@
             android:background="@color/colorDidactisch"
             android:gravity="center"
             android:onClick="onClick"
-            android:text="Didactische bekwaamheid"
+            android:text="Didactisch bekwaam"
             android:textColor="#FFFFFF"
             android:textSize="17dp"
             />
