@@ -45,7 +45,7 @@ public class Home extends AppCompatActivity {
         mColleBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent colleIntent = new Intent(Home.this, Colle.class);
+                Intent colleIntent = new Intent(Home.this, Card.class);
                 Home.this.startActivity(colleIntent);
             }
         });

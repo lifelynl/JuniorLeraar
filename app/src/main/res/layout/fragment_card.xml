@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hva.tsse.juniorleraar.CardTestFragment"
+    tools:showIn="@layout/activity_card">
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/Result_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="56dp"
+                android:text="Resultaat"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="De leraar levert een oplossingsgericht bijdrage aan algemene taken in het team en aan de onderwijskundige en pedagogische ontwikkeling van de school."
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Result_Title" />
+
+            <TextView
+                android:id="@+id/Indicators_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="De leraar..."
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Result" />
+
+            <TextView
+                android:id="@+id/Indicators"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:lineSpacingExtra="3sp"
+                android:text="• Is op de hoogte van relevante kenmerken van de school en de leerlingen
+                \n• Wisselt met collega’s (innovatieve) kennis en informatie uit
+                \n• Wisselt met collega’s kennis en informatie uit over leerlingen
+                \n• Vervult een actieve rol in teamoverleg en brengt op eigen initiatief onderwerpen in
+                \n• Zoekt stelselmatig naar uitwisseling met collega’s om in samenwerking lessen te optimaliseren
+                \n• Treedt collega’s respectvol tegemoet en houdt rekening met verschillende achtergronden en talenten
+                \n• Stelt teambelang boven eigen belang"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Indicators_Title" />
+
+            <TextView
+                android:id="@+id/Reflection_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Reflectievragen"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Indicators" />
+
+            <TextView
+                android:id="@+id/Reflection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:lineSpacingExtra="3sp"
+                android:text="• Hoe ziet werken in teamverband er voor jou uit?
+\n• Welke meerwaarde ervaar je bij het werken in teamverband in jouw school?
+\n• Ben je tevreden over jouw inbreng in het team?
+\n• Heb je feedback van je collega’s gekregen op je handelen in de klas? Waaruit bestond
+die feedback en wat heb je daarmee gedaan?
+\n• Wat heb jij van je teamgenoten nodig om goed in een team te kunnen werken? Krijg
+je dat, en zo niet, hoe maak je dat bespreekbaar?
+\n• Op welke manier lever je vanuit eerder verworven competenties een bijdrage aan de
+ontwikkeling van de school?"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Reflection_Title" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
+</LinearLayout>
