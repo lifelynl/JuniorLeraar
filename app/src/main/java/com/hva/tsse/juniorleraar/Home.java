@@ -33,11 +33,8 @@ public class Home extends AppCompatActivity {
         mDidaBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent didaIntent = new Intent(Home.this, Dida.class);
-//                    Home.this.startActivity(didaIntent);
-
-                Intent intent = new Intent(Home.this, TabActivity.class);
-                Home.this.startActivity(intent);
+                Intent didaIntent = new Intent(Home.this, Dida.class);
+                    Home.this.startActivity(didaIntent);
             }
         });
 
