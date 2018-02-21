@@ -1,18 +1,10 @@
 package com.hva.tsse.juniorleraar;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Home extends AppCompatActivity {
 
@@ -37,8 +29,11 @@ public class Home extends AppCompatActivity {
         mDidaBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent didaIntent = new Intent(Home.this, Dida.class);
-                    Home.this.startActivity(didaIntent);
+//                Intent didaIntent = new Intent(Home.this, Dida.class);
+//                    Home.this.startActivity(didaIntent);
+
+                Intent intent = new Intent(Home.this, TabActivity.class);
+                Home.this.startActivity(intent);
             }
         });
 

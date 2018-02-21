@@ -16,12 +16,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:label="@string/app_name" android:name=".Dida"/>
-        <activity android:label="@string/app_name" android:name=".Colle"/>
-        <activity android:label="@string/app_name" android:name=".Peda"/>
-
-
+        <activity
+            android:name=".Dida"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Colle"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Peda"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".TabActivity"
+            android:label="@string/title_activity_tab"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
