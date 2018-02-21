@@ -13,19 +13,17 @@ import com.hva.tsse.juniorleraar.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class BekwaamFragment extends Fragment {
-
-
-    public BekwaamFragment() {
+public class BekwaamFragment extends Fragment
+{
+    public BekwaamFragment()
+    {
         // Required empty public constructor
     }
 
-
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_bekwaam, container, false);
     }
-
 }

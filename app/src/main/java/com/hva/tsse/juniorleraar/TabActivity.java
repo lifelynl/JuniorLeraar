@@ -15,7 +15,6 @@ public class TabActivity extends AppCompatActivity {
 
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
-
     private TabLayout tabLayout;
 
     private static final String TITLE_FRAGMENT_BEKWAAM = "BEKWAAM";
@@ -39,7 +38,6 @@ public class TabActivity extends AppCompatActivity {
         tabLayout = (TabLayout) findViewById(R.id.tablayout);
         tabLayout.setupWithViewPager(mViewPager);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

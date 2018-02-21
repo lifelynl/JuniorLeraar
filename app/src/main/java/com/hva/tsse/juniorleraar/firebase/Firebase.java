@@ -8,6 +8,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.hva.tsse.juniorleraar.adapter.DialogueCardAdapter;
 import com.hva.tsse.juniorleraar.model.DialogueCard;
 
 import java.io.Serializable;
@@ -54,8 +55,8 @@ public class Firebase implements Serializable {
                     DialogueCard dialogue = messageSnapshot.getValue(DialogueCard.class);
                     mDialogueCards.add(dialogue);
                 }
-                Log.w(TAG, "Trying to get text form firebase: " + mDialogueCards.get(0).getLevel());
-                Log.w(TAG, "Number of object from Firebase: " + mDialogueCards.size());
+                //add values to
+                new DialogueCardAdapter(mDialogueCards);
             }
 
             @Override
@@ -67,11 +68,7 @@ public class Firebase implements Serializable {
         });
     }
 
-    public void clearDialogueCards(){
+    private void clearDialogueCards(){
         mDialogueCards.clear();
-    }
-
-    public List<DialogueCard> getmDialogueCards(){
-        return mDialogueCards;
     }
 }

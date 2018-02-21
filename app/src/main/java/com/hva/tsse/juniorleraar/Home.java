@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.hva.tsse.juniorleraar.firebase.Firebase;
+
 public class Home extends AppCompatActivity {
 
     // Vars
@@ -18,6 +20,8 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        Firebase mFirebase = new Firebase();
+        mFirebase.getData();
 
         // findViews
         Button mDidaBtn = (Button)findViewById(R.id.btn_didactisch);
