@@ -16,6 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity
             android:name=".Dida"
             android:label="@string/app_name" />
@@ -29,6 +30,17 @@
             android:name=".TabActivity"
             android:label="@string/title_activity_tab"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+=======
+
+        <activity android:label="@string/app_name" android:name=".Dida"
+            android:parentActivityName=".Home"/>
+        <activity android:label="@string/app_name" android:name=".Colle"
+            android:parentActivityName=".Home"/>
+        <activity android:label="@string/app_name" android:name=".Peda"
+            android:parentActivityName=".Home"/>
+
+
+>>>>>>> development
     </application>
 
 </manifest>
