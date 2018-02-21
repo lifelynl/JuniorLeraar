@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#25167A</color>
+    <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-
-
-    <color name="colorDidactisch">#25167A</color>
-    <color name="colorCollegiaal">#FFD200</color>
-    <color name="colorPedagogisch">#00A7D3</color>
 </resources>
