@@ -6,6 +6,15 @@
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
 
+    <!--Theme-->
+    <string name="didactisch_bekwaam">Didactisch Bekwaam</string>
+    <string name="collegiale_samenwerking">Collegiale Samenwerking</string>
+    <string name="pedagogisch_bekwaam">Pedagogisch Bekwaam</string>
+    <!--Level-->
+    <string name="startbekwaam">Startbekwaam</string>
+    <string name="bekwaam">Bekwaam</string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

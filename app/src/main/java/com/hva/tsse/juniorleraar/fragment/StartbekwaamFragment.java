@@ -37,7 +37,7 @@ public class StartbekwaamFragment extends Fragment
         rootView.setTag(TAG);
 
         DialogueCardAdapter adapter = new DialogueCardAdapter();
-        mDialogueCards = adapter.getmDialogueCards();
+        mDialogueCards = adapter.getAllCards();
         Log.w(TAG, "Number of object from Firebase: " + mDialogueCards.size());
 
         return rootView;

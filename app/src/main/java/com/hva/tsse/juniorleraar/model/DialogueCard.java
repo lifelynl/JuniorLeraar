@@ -66,5 +66,9 @@ public class DialogueCard implements Serializable {
     public void setText(String text) {
         this.text = text;
     }
+
+    public String toString(){
+        return level + ":\t" + theme + ",\t" + competence + ",\t" + title + ",\t" + text;
+    }
 }
 
