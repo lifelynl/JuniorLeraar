@@ -15,6 +15,8 @@ import com.hva.tsse.juniorleraar.R;
  */
 public class BekwaamFragment extends Fragment
 {
+    private static final String TAG = "BEKWAAMFRAGMENT";
+
     public BekwaamFragment()
     {
         // Required empty public constructor
@@ -23,7 +25,11 @@ public class BekwaamFragment extends Fragment
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_bekwaam, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_bekwaam, container, false);
+        rootView.setTag(TAG);
+
+
+
+        return rootView;
     }
 }

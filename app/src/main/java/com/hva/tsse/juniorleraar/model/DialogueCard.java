@@ -12,6 +12,8 @@ public class DialogueCard implements Serializable {
     String title;
     String competence;
 
+    Boolean isTitle;
+
     String text;
 
     public DialogueCard() {
@@ -23,6 +25,8 @@ public class DialogueCard implements Serializable {
         this.theme = theme;
         this.title = title;
         this.competence = competence;
+
+        this.isTitle = false;
 
         this.text = text;
     }
@@ -57,6 +61,14 @@ public class DialogueCard implements Serializable {
 
     public void setCompetence(String competence) {
         this.competence = competence;
+    }
+
+    public Boolean getIsTitle() {
+        return isTitle;
+    }
+
+    public void setIsTitle(Boolean isTitle) {
+        this.isTitle = isTitle;
     }
 
     public String getText() {

@@ -5,10 +5,9 @@
     android:layout_height="fill_parent">
 
     <ListView
-        android:id="@+id/id"
+        android:id="@+id/list_collegiale_samenwerking"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentLeft="true"/>
 
 </RelativeLayout>

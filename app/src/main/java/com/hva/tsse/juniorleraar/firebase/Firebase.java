@@ -8,7 +8,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.hva.tsse.juniorleraar.adapter.DialogueCardAdapter;
 import com.hva.tsse.juniorleraar.model.DialogueCard;
 
 import java.io.Serializable;
@@ -33,7 +32,7 @@ public class Firebase implements Serializable {
     public Firebase() {
         mDatabase = FirebaseDatabase.getInstance();
         mDatabaseReference = mDatabase.getReferenceFromUrl(mURL);
-        mDialogueCards = new ArrayList<DialogueCard>();
+        mDialogueCards = new ArrayList<>();
     }
 
     /**
@@ -56,7 +55,7 @@ public class Firebase implements Serializable {
                     mDialogueCards.add(dialogue);
                 }
                 //add values to
-                new DialogueCardAdapter(mDialogueCards);
+                new DataSource(mDialogueCards);
             }
 
             @Override
