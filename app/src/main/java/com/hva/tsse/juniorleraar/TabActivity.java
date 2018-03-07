@@ -10,6 +10,7 @@ import android.view.Menu;
 import com.hva.tsse.juniorleraar.adapter.SectionsPagerAdapter;
 import com.hva.tsse.juniorleraar.fragment.BekwaamFragment;
 import com.hva.tsse.juniorleraar.fragment.StartbekwaamFragment;
+import com.hva.tsse.juniorleraar.model.DialogueCard;
 
 public class TabActivity extends AppCompatActivity {
 
@@ -19,6 +20,8 @@ public class TabActivity extends AppCompatActivity {
 
     private static final String TITLE_FRAGMENT_BEKWAAM = "BEKWAAM";
     private static final String TITLE_FRAGMENT_STARTBEKWAAM = "STARTBEKWAAM";
+
+    private DialogueCard mDialogueCard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,9 @@ public class TabActivity extends AppCompatActivity {
 
         tabLayout = (TabLayout) findViewById(R.id.tablayout);
         tabLayout.setupWithViewPager(mViewPager);
+
+        this.mDialogueCard = (DialogueCard) getIntent().getSerializableExtra("selectedCard");
+
     }
 
     @Override

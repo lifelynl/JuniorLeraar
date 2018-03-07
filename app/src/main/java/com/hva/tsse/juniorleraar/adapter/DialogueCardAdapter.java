@@ -38,7 +38,7 @@ public class DialogueCardAdapter extends BaseAdapter
     }
 
     @Override
-    public Object getItem(int position) {
+    public DialogueCard getItem(int position) {
         return mDialogueCards.get(position);
     }
 

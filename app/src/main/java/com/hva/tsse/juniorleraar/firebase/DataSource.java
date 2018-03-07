@@ -17,7 +17,7 @@ public class DataSource {
 
     /**
      * Empty constructor because the list is static
-     * It is the same so it can retrieved from everywhere
+     * It is the same so it can be retrieved from everywhere
      */
     public DataSource(){
 
@@ -134,5 +134,35 @@ public class DataSource {
      */
     public List<DialogueCard> getTitlesPedagogischBekwaam(){
         return getList("Pedagogisch Bekwaam", null,null, "Startbekwaam");
+    }
+
+    /**
+     * @return the specific card depending on the title of the card and the level
+     */
+    public DialogueCard getCardFromTitleBekwaam(String title){
+        DialogueCard mDialogueCard = new DialogueCard();
+        for (DialogueCard card : mDialogueCards){
+            if (card.getTitle().equals(title)){
+                if (card.getLevel().equals("Bekwaam")){
+                    return card;
+                }
+            }
+        }
+        return null;
+    }
+
+    /**
+     * @return the specific card depending on the title of the card and the level
+     */
+    public DialogueCard getCardFromTitleStartbekwaam(String title){
+        DialogueCard mDialogueCard = new DialogueCard();
+        for (DialogueCard card : mDialogueCards){
+            if (card.getTitle().equals(title)){
+                if (card.getLevel().equals("Startbekwaam")){
+                    return card;
+                }
+            }
+        }
+        return null;
     }
 }
