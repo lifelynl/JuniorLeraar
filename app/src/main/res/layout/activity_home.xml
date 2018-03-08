@@ -10,21 +10,23 @@
         android:id="@+id/hva"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/juniorleraar"
+        android:layout_above="@+id/buttons"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="340dp"
         android:layout_marginLeft="150dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:gravity="top"
         android:src="@drawable/hvalogo" />
 
     <ImageView
         android:id="@+id/juniorleraar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/buttons"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="100dp"
-        android:src="@drawable/juniorleraar" />
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/juniorlogo" />
 
     <LinearLayout
         android:id="@+id/buttons"
@@ -37,7 +39,7 @@
         <Button
             android:id="@+id/btn_didactisch"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:background="@color/colorDidactisch"
             android:gravity="center"
             android:onClick="onClick"
@@ -49,7 +51,7 @@
         <Button
             android:id="@+id/btn_collegiaal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:background="#FFD200"
             android:gravity="center"
             android:onClick="onClick"
@@ -60,7 +62,7 @@
         <Button
             android:id="@+id/btn_pedagogisch"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="70dp"
             android:background="#00A7D3"
             android:gravity="center"
             android:onClick="onClick"
