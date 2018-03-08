@@ -57,6 +57,7 @@ public class DialogueCardAdapter extends BaseAdapter
             view = inflater.inflate(R.layout.list_section_item, viewGroup, false);
             TextView item_section_title = (TextView) view.findViewById(R.id.list_item_section_title);
             item_section_title.setText((mDialogueCards.get(position)).getCompetence());
+            view.setOnClickListener(null);
         }
         else
         {
