@@ -72,48 +72,7 @@ public class DataSource {
     public List<DialogueCard> getAllCards(){
         return mDialogueCards;
     }
-
-    /**
-     * @return all the titles from the theme "Didactisch bekwaam" and the level "Startbekwaam"
-     */
-    public List<DialogueCard> getCardsDidactischBekwaamStartbekwaam(){
-        return getList("Didactisch Bekwaam",null,null, "Startbekwaam");
-    }
-
-    /**
-     * @return all the titles from the theme "Didactisch bekwaam" and the level "Bekwaam"
-     */
-    public List<DialogueCard> getCardsDidactischBekwaamBekwaam(){
-        return getList("Didactisch Bekwaam",null,null, "Bekwaam");
-    }
-
-    /**
-     * @return all the titles from the theme "Collegiale samenwerking" and the level "Startbekwaam"
-     */
-    public List<DialogueCard> getCardsCollegialeSamenwerkingStartbekwaam(){
-        return getList("Collegiale Samenwerking", null,null, "Startbekwaam");
-    }
-
-    /**
-     * @return all the titles from the theme "Collegiale samenwerking" and the level "Bekwaam"
-     */
-    public List<DialogueCard> getCardsCollegialeSamenwerkingBekwaam(){
-        return getList("Collegiale Samenwerking", null,null, "Bekwaam");
-    }
-
-    /**
-     * @return all the titles from the theme "Pedagogisch Bekwaam" and the level "Startbekwaam"
-     */
-    public List<DialogueCard> getCardsPedagogischBekwaamStartbekwaam(){
-        return getList("Pedagogisch Bekwaam", null,null, "Startbekwaam");
-    }
-
-    /**
-     * @return all the titles from the theme "Pedagogisch Bekwaam" and the level "Bekwaam"
-     */
-    public List<DialogueCard> getCardsPedagogischBekwaamBekwaam(){
-        return getList("Pedagogisch Bekwaam", null,null, "Bekwaam");
-    }
+    
 
     /**
      * @return all the titles with the theme "Didactisch Bekwaam"
