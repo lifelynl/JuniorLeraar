@@ -50,20 +50,21 @@ public class DialogueCardAdapter extends BaseAdapter
     @Override
     public View getView(int position, View view, ViewGroup viewGroup) {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        if (mDialogueCards.get(position).getTheme() != "Didactisch Bekwaam" && mDialogueCards.get(position).getTitle().matches("\\d\\.(\\s|1).*") && position != mDialogueCards.size() && mDialogueCards.get(position).getTitle() == mDialogueCards.get(position + 1).getTitle()) {
+        if (mDialogueCards.get(position).getTitle().matches("\\d\\.(\\s|1).*") &&
+                        position + 1 < mDialogueCards.size() &&
+                        mDialogueCards.get(position).getTitle() == mDialogueCards.get(position + 1).getTitle()) {
             // if section header
             view = inflater.inflate(R.layout.list_section_item, viewGroup, false);
-            TextView tvSectionTitle = (TextView) view.findViewById(R.id.list_item_section_title);
-            tvSectionTitle.setText((mDialogueCards.get(position)).getCompetence());
+            TextView item_section_title = (TextView) view.findViewById(R.id.list_item_section_title);
+            item_section_title.setText((mDialogueCards.get(position)).getCompetence());
         }
         else
         {
             // if item
             view = inflater.inflate(R.layout.list_item, viewGroup, false);
-            TextView tvItemTitle = (TextView) view.findViewById(R.id.list_item_title);
-            tvItemTitle.setText((mDialogueCards.get(position)).getTitle());
+            TextView item_title = (TextView) view.findViewById(R.id.list_item_title);
+            item_title.setText((mDialogueCards.get(position)).getTitle());
         }
-
         return view;
     }
 }
