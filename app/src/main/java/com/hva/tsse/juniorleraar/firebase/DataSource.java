@@ -20,7 +20,6 @@ public class DataSource {
      * It is the same so it can be retrieved from everywhere
      */
     public DataSource(){
-
     }
 
     /**
@@ -78,7 +77,17 @@ public class DataSource {
      * @return all the titles with the theme "Didactisch Bekwaam"
      */
     public List<DialogueCard> getTitlesDidactischBekwaam(){
-        return getList("Didactisch Bekwaam",null,null, "Startbekwaam");
+        List<DialogueCard> listTitles = getList("Didactisch Bekwaam",null,null, "Startbekwaam");
+        List<DialogueCard> listCompetence = new ArrayList<>();
+        for (DialogueCard card : listTitles){
+            if (card.getTitle().matches("\\d\\.(\\s|1).*")){
+                card.setIsTitle(true);
+                listCompetence.add(card);
+            }
+            card.setIsTitle(false);
+            listCompetence.add(card);
+        }
+        return listCompetence;
     }
 
     /**
