@@ -52,7 +52,6 @@ public class Firebase implements Serializable {
                 // Get it and put it in the list mDialogueCards
                 for (DataSnapshot messageSnapshot : dataSnapshot.getChildren()) {
                     DialogueCard dialogue = messageSnapshot.getValue(DialogueCard.class);
-                    dialogue.setIsTitle(false);
                     mDialogueCards.add(dialogue);
                 }
                 //add values to

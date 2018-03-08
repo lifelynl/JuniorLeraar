@@ -81,10 +81,8 @@ public class DataSource {
         List<DialogueCard> listCompetence = new ArrayList<>();
         for (DialogueCard card : listTitles){
             if (card.getTitle().matches("\\d\\.(\\s|1).*")){
-                card.setIsTitle(true);
                 listCompetence.add(card);
             }
-            card.setIsTitle(false);
             listCompetence.add(card);
         }
         return listCompetence;
