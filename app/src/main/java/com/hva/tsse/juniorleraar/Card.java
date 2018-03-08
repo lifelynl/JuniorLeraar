@@ -23,7 +23,7 @@ public class Card extends AppCompatActivity {
     }
 
     public void setResult(String result){
-        TextView textview = (TextView) findViewById(R.id.result);
+        TextView textview = (TextView) findViewById(R.id.result_sb);
         textview.setText(result);
     }
     public void setIndicators(String indicators){

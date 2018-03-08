@@ -1,18 +1,12 @@
 package com.hva.tsse.juniorleraar;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.hva.tsse.juniorleraar.firebase.Firebase;
 
 public class Home extends AppCompatActivity {
 
@@ -26,6 +20,8 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        Firebase mFirebase = new Firebase();
+        mFirebase.getData();
 
         // findViews
         Button mDidaBtn = (Button)findViewById(R.id.btn_didactisch);
@@ -45,7 +41,7 @@ public class Home extends AppCompatActivity {
         mColleBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent colleIntent = new Intent(Home.this, Card.class);
+                Intent colleIntent = new Intent(Home.this, Colle.class);
                 Home.this.startActivity(colleIntent);
             }
         });
