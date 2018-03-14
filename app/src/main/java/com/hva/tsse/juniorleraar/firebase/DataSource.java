@@ -3,7 +3,6 @@ package com.hva.tsse.juniorleraar.firebase;
 import android.content.Context;
 import android.util.Log;
 
-import com.hva.tsse.juniorleraar.R;
 import com.hva.tsse.juniorleraar.model.DialogueCard;
 
 import java.util.ArrayList;
@@ -63,7 +62,7 @@ public class DataSource {
      */
     private void logList(List<DialogueCard> list){
         for (DialogueCard card : list){
-            Log.w(context.getResources().getString(R.string.startbekwaam), card.toString());
+            Log.w("TAG", card.toString());
         }
     }
 
@@ -79,7 +78,7 @@ public class DataSource {
      * @return all the titles with the theme "Didactisch Bekwaam"
      */
     public List<DialogueCard> getTitlesDidactischBekwaam(){
-        List<DialogueCard> listTitles = getList(context.getResources().getString(R.string.didactisch_bekwaam),null,null, context.getResources().getString(R.string.startbekwaam));
+        List<DialogueCard> listTitles = getList("Didactisch Bekwaam",null,null, "Startbekwaam");
         List<DialogueCard> listCompetence = new ArrayList<>();
         for (DialogueCard card : listTitles){
             if (card.getTitle().matches("\\d\\.(\\s|1).*")){
@@ -94,14 +93,14 @@ public class DataSource {
      * @return all the titles with the theme "Collegiale Samenewerking"
      */
     public List<DialogueCard> getTitlesCollegialeSamenwerking(){
-        return getList(context.getResources().getString(R.string.collegiale_samenwerking), null,null, context.getResources().getString(R.string.startbekwaam));
+        return getList("Collegiale Samenwerking", null,null,"Startbekwaam");
     }
 
     /**
      * @return all the titles with the theme "Pedagogisch Bekwaam"
      */
     public List<DialogueCard> getTitlesPedagogischBekwaam(){
-        return getList(context.getResources().getString(R.string.pedagogisch_bekwaam), null,null, context.getResources().getString(R.string.startbekwaam));
+        return getList("Pedagogisch Bekwaam", null,null, "Startbekwaam");
     }
 
     /**
@@ -111,7 +110,7 @@ public class DataSource {
         DialogueCard mDialogueCard = new DialogueCard();
         for (DialogueCard card : mDialogueCards){
             if (card.getTitle().equals(title)){
-                if (card.getLevel().equals(context.getResources().getString(R.string.bekwaam))){
+                if (card.getLevel().equals("Bekwaam")){
                     return card;
                 }
             }
@@ -126,7 +125,7 @@ public class DataSource {
         DialogueCard mDialogueCard = new DialogueCard();
         for (DialogueCard card : mDialogueCards){
             if (card.getTitle().equals(title)){
-                if (card.getLevel().equals(context.getResources().getString(R.string.startbekwaam))){
+                if (card.getLevel().equals("Startbekwaam")){
                     return card;
                 }
             }
