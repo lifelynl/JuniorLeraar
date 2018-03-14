@@ -39,9 +39,9 @@ public class BekwaamFragment extends Fragment
         String title = currentCard.getTitle();
         DataSource source = new DataSource();
         DialogueCard currentCardFull = source.getCardFromTitleBekwaam(title);
-        String currentResult = currentCard.getResultText();
-        String currentTeacher = currentCard.getTeacherText();
-        String currentQuestion = currentCard.getQuestionText();
+        String currentResult = currentCardFull.getResultText();
+        String currentTeacher = currentCardFull.getTeacherText();
+        String currentQuestion = currentCardFull.getQuestionText();
         System.out.println("vanuit bekwaamfragment"+currentCardFull);
         this.displayCard(currentTeacher, currentResult, currentQuestion, view);
     }
