@@ -1,16 +1,18 @@
 package com.hva.tsse.juniorleraar;
 
-import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
+        import android.os.Bundle;
+        import android.support.design.widget.TabLayout;
+        import android.support.v4.view.ViewPager;
+        import android.support.v7.app.AppCompatActivity;
+        import android.support.v7.widget.Toolbar;
+        import android.view.Menu;
+        import android.view.View;
+        import android.widget.TextView;
 
-import com.hva.tsse.juniorleraar.adapter.SectionsPagerAdapter;
-import com.hva.tsse.juniorleraar.fragment.BekwaamFragment;
-import com.hva.tsse.juniorleraar.fragment.StartbekwaamFragment;
-import com.hva.tsse.juniorleraar.model.DialogueCard;
+        import com.hva.tsse.juniorleraar.adapter.SectionsPagerAdapter;
+        import com.hva.tsse.juniorleraar.fragment.BekwaamFragment;
+        import com.hva.tsse.juniorleraar.fragment.StartbekwaamFragment;
+        import com.hva.tsse.juniorleraar.model.DialogueCard;
 
 public class TabActivity extends AppCompatActivity {
 
@@ -22,6 +24,10 @@ public class TabActivity extends AppCompatActivity {
     private static final String TITLE_FRAGMENT_STARTBEKWAAM = "STARTBEKWAAM";
 
     private DialogueCard mDialogueCard;
+
+    public DialogueCard getmDialogueCard() {
+        return mDialogueCard;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +49,8 @@ public class TabActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(mViewPager);
 
         this.mDialogueCard = (DialogueCard) getIntent().getSerializableExtra("selectedCard");
+        this.setTitle("xd");
+
     }
 
     // Options menu which we don't need unless PO wants HET TRAPPETJE
@@ -62,8 +70,10 @@ public class TabActivity extends AppCompatActivity {
 
     public void setUpViewPager(ViewPager viewpager) {
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-        mSectionsPagerAdapter.addFragment(new BekwaamFragment(), TITLE_FRAGMENT_STARTBEKWAAM);
-        mSectionsPagerAdapter.addFragment(new StartbekwaamFragment(), TITLE_FRAGMENT_BEKWAAM);
+        mSectionsPagerAdapter.addFragment(new BekwaamFragment(),TITLE_FRAGMENT_BEKWAAM );
+        mSectionsPagerAdapter.addFragment(new StartbekwaamFragment(), TITLE_FRAGMENT_STARTBEKWAAM);
         viewpager.setAdapter(mSectionsPagerAdapter);
     }
+
 }
+
