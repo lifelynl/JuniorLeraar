@@ -3,15 +3,16 @@ package com.hva.tsse.juniorleraar.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.hva.tsse.juniorleraar.R;
+import com.hva.tsse.juniorleraar.TabActivity;
+import com.hva.tsse.juniorleraar.firebase.DataSource;
 import com.hva.tsse.juniorleraar.model.DialogueCard;
 
 import java.util.List;
@@ -34,19 +35,19 @@ public class StartbekwaamFragment extends Fragment
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        View rootView = inflater.inflate(R.layout.fragment_startbekwaam, container, false);
-        rootView.setTag(TAG);
+        View SBrootView = inflater.inflate(R.layout.fragment_card_sb, container, false);
+        SBrootView.setTag(TAG);
 
-        mRecyclerview = (RecyclerView) rootView.findViewById(R.id.startbekwaamlist);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity());
-        mRecyclerview.setLayoutManager(mLayoutManager);
-        mRecyclerview.setHasFixedSize(true);
-
-        //Adding ItemAnimator
-        RecyclerView.ItemAnimator itemAnimator = new DefaultItemAnimator();
-        itemAnimator.setAddDuration(100L);
-        itemAnimator.setRemoveDuration(100L);
-        mRecyclerview.setItemAnimator(itemAnimator);
+//        mRecyclerview = (RecyclerView) rootView.findViewById(R.id.startbekwaamlist);
+//        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity());
+//        mRecyclerview.setLayoutManager(mLayoutManager);
+//        mRecyclerview.setHasFixedSize(true);
+//
+//        //Adding ItemAnimator
+//        RecyclerView.ItemAnimator itemAnimator = new DefaultItemAnimator();
+//        itemAnimator.setAddDuration(100L);
+//        itemAnimator.setRemoveDuration(100L);
+//        mRecyclerview.setItemAnimator(itemAnimator);
 
         //Adding Gestures, this makes you possible to swipe and move cards inside the ListView
         ItemTouchHelper.SimpleCallback simpleItemTouchCallback = new ItemTouchHelper.SimpleCallback(ItemTouchHelper.UP
@@ -66,7 +67,38 @@ public class StartbekwaamFragment extends Fragment
 
         ItemTouchHelper itemTouchHelper = new ItemTouchHelper(simpleItemTouchCallback);
         itemTouchHelper.attachToRecyclerView(mRecyclerview);
-        return rootView;
+        selectCard(SBrootView);
+        return SBrootView;
+    }
+    public void selectCard(View view){
+        DialogueCard currentCard = ((TabActivity)getActivity()).getmDialogueCard();
+        String title = currentCard.getTitle();
+        System.out.println(title);
+        DataSource source = new DataSource();
+        DialogueCard currentCardFull = source.getCardFromTitleStartbekwaam(title);
+        String currentResult = currentCard.getResultText();
+        String currentTeacher = currentCard.getTeachterText();
+        String currentQuestion = currentCard.getQuestionText();
+        System.out.println("vanuit SBFragment"+currentCardFull);
+        this.displayCard(currentTeacher, currentResult, currentQuestion, view);
+    }
+    public void displayCard(String result, String indicators, String reflection, View view){
+        setResult(view, result);
+        setIndicators(view, indicators);
+        setReflection(view, reflection);
+    }
+
+    public void setResult(View view, String result){
+        TextView textview = (TextView) view.findViewById(R.id.result_sb);
+        textview.setText(result);
+    }
+    public void setIndicators(View view,String indicators){
+        TextView textview = (TextView) view.findViewById(R.id.indicators_sb);
+        textview.setText(indicators);
+    }
+    public void setReflection(View view,String reflection){
+        TextView textview = (TextView) view.findViewById(R.id.reflection_sb);
+        textview.setText(reflection);
     }
 
     public void onResume() {

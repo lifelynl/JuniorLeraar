@@ -31,7 +31,8 @@
             android:id="@+id/tablayout"
             android:layout_width="match_parent"
             app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr">
 
             <android.support.design.widget.TabItem
                 android:id="@+id/tab_startbekwaam"
