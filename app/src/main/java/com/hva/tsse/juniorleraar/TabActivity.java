@@ -70,8 +70,8 @@ public class TabActivity extends AppCompatActivity {
 
     public void setUpViewPager(ViewPager viewpager) {
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-        mSectionsPagerAdapter.addFragment(new BekwaamFragment(),TITLE_FRAGMENT_BEKWAAM );
         mSectionsPagerAdapter.addFragment(new StartbekwaamFragment(), TITLE_FRAGMENT_STARTBEKWAAM);
+        mSectionsPagerAdapter.addFragment(new BekwaamFragment(),TITLE_FRAGMENT_BEKWAAM );
         viewpager.setAdapter(mSectionsPagerAdapter);
     }
 

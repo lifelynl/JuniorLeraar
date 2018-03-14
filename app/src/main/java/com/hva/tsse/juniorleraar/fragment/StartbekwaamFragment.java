@@ -77,7 +77,7 @@ public class StartbekwaamFragment extends Fragment
         DataSource source = new DataSource();
         DialogueCard currentCardFull = source.getCardFromTitleStartbekwaam(title);
         String currentResult = currentCard.getResultText();
-        String currentTeacher = currentCard.getTeachterText();
+        String currentTeacher = currentCard.getTeacherText();
         String currentQuestion = currentCard.getQuestionText();
         System.out.println("vanuit SBFragment"+currentCardFull);
         this.displayCard(currentTeacher, currentResult, currentQuestion, view);
