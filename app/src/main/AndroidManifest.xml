@@ -24,11 +24,14 @@
         </activity>
 
         <activity android:label="@string/app_name" android:name=".Dida"
-            android:parentActivityName=".Home"/>
+            android:parentActivityName=".Home"
+            android:theme="@style/Dida"/>
         <activity android:label="@string/app_name" android:name=".Colle"
-            android:parentActivityName=".Home"/>
+            android:parentActivityName=".Home"
+            android:theme="@style/Collegiaal"/>
         <activity android:label="@string/app_name" android:name=".Peda"
-            android:parentActivityName=".Home"/>
+            android:parentActivityName=".Home"
+            android:theme="@style/Peda"/>
 
     </application>
 

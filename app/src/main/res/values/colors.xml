@@ -6,6 +6,9 @@
 
 
     <color name="colorDidactisch">#25167A</color>
+    <color name="colorDidAccent">#CC25167A</color>
     <color name="colorCollegiaal">#FFD200</color>
+    <color name="colorCollAccent">#CCFFD200</color>
     <color name="colorPedagogisch">#00A7D3</color>
+    <color name="colorPedAccent">#CC00A7D3</color>
 </resources>
