@@ -25,6 +25,8 @@ public class Colle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_colle);
+
+        ColorUtils.darkenStatusBar(this, R.color.colorCollegiaal);
         this.setTitle("Collegiale samenwerking");
 
         list_collegiale_samenwerking = (ListView) findViewById(R.id.list_collegiale_samenwerking);
