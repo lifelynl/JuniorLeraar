@@ -1,6 +1,6 @@
 package com.hva.tsse.juniorleraar.firebase;
 
-
+import android.content.Context;
 import android.util.Log;
 
 import com.google.firebase.database.DataSnapshot;
@@ -8,6 +8,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.hva.tsse.juniorleraar.R;
 import com.hva.tsse.juniorleraar.model.DialogueCard;
 
 import java.io.Serializable;
@@ -19,7 +20,7 @@ import java.util.List;
  */
 
 public class Firebase implements Serializable {
-    private static final String TAG = "FIREBASECLASS";
+    private static Context context;
     private static final String mURL = "https://junior-leraar.firebaseio.com/Dialoguecard";
     private FirebaseDatabase mDatabase;
     private DatabaseReference mDatabaseReference;
@@ -62,11 +63,14 @@ public class Firebase implements Serializable {
             public void onCancelled(DatabaseError error) {
                 // Failed to read value
                 // Print error message
-                Log.w(TAG, "Failed to read value.", error.toException());
+                Log.w(context.getResources().getString(R.string.bekwaam), "Failed to read value.", error.toException());
             }
         });
     }
 
+    /**
+     *  This method is to clear all the cards already fetched
+     */
     private void clearDialogueCards(){
         mDialogueCards.clear();
     }

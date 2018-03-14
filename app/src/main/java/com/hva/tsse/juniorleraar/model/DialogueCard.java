@@ -20,6 +20,17 @@ public class DialogueCard implements Serializable {
 
     }
 
+    /**
+     * The model Dialoguecard
+     *
+     * @param level The level of the card this is "bekwaam" or "startbekwaam"
+     * @param theme The theme of the card this is "didactisch bekwaam", "collegiale samenwerking" or "Pedagogisch bekwaam"
+     * @param title The title of the card with a number
+     * @param competence The competence of the card. This is the same as title with no number
+     * @param resultText The result text of the card
+     * @param teacherText The text of the things the teacher should be able to do
+     * @param questionText Questions to reflect on his own doing
+     */
     public DialogueCard(String level, String theme, String title, String competence,
                         String resultText, String teacherText, String questionText){
         this.level = level;
@@ -89,7 +100,7 @@ public class DialogueCard implements Serializable {
     }
 
     public String toString(){
-        return level + ":\t" + theme + ",\t" + competence + ",\t" + title + ",\t" + resultText;
+        return level + ":\t" + theme + ",\t" + competence + ",\t" + title;
     }
 }
 

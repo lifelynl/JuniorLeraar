@@ -1,18 +1,15 @@
 package com.hva.tsse.juniorleraar;
 
         import android.os.Bundle;
-        import android.support.design.widget.TabLayout;
-        import android.support.v4.view.ViewPager;
-        import android.support.v7.app.AppCompatActivity;
-        import android.support.v7.widget.Toolbar;
-        import android.view.Menu;
-        import android.view.View;
-        import android.widget.TextView;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 
-        import com.hva.tsse.juniorleraar.adapter.SectionsPagerAdapter;
-        import com.hva.tsse.juniorleraar.fragment.BekwaamFragment;
-        import com.hva.tsse.juniorleraar.fragment.StartbekwaamFragment;
-        import com.hva.tsse.juniorleraar.model.DialogueCard;
+import com.hva.tsse.juniorleraar.adapter.SectionsPagerAdapter;
+import com.hva.tsse.juniorleraar.fragment.BekwaamFragment;
+import com.hva.tsse.juniorleraar.fragment.StartbekwaamFragment;
+import com.hva.tsse.juniorleraar.model.DialogueCard;
 
 public class TabActivity extends AppCompatActivity {
 

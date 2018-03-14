@@ -1,5 +1,6 @@
 package com.hva.tsse.juniorleraar.firebase;
 
+import android.content.Context;
 import android.util.Log;
 
 import com.hva.tsse.juniorleraar.model.DialogueCard;
@@ -12,7 +13,7 @@ import java.util.List;
  */
 
 public class DataSource {
-    private final String TAG = "DATASOURCECLASS";
+    private Context context;
     private static List<DialogueCard> mDialogueCards;
 
     /**
@@ -61,7 +62,7 @@ public class DataSource {
      */
     private void logList(List<DialogueCard> list){
         for (DialogueCard card : list){
-            Log.w(TAG, card.toString());
+            Log.w("TAG", card.toString());
         }
     }
 
@@ -92,7 +93,7 @@ public class DataSource {
      * @return all the titles with the theme "Collegiale Samenewerking"
      */
     public List<DialogueCard> getTitlesCollegialeSamenwerking(){
-        return getList("Collegiale Samenwerking", null,null, "Startbekwaam");
+        return getList("Collegiale Samenwerking", null,null,"Startbekwaam");
     }
 
     /**
