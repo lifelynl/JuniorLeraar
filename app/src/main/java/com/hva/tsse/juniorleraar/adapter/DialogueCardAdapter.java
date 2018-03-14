@@ -18,8 +18,6 @@ import java.util.List;
 
 public class DialogueCardAdapter extends BaseAdapter
 {
-    private final String TAG = "DIALOGUECARDADAPTER";
-
     private Context context;
     private List<DialogueCard> mDialogueCards;
 
@@ -32,24 +30,48 @@ public class DialogueCardAdapter extends BaseAdapter
         this.mDialogueCards = mDialogueCards;
     }
 
+    /**
+     * @return The amount of cards in the list
+     */
     @Override
     public int getCount() {
         return mDialogueCards.size();
     }
 
+    /**
+     * @param position The position of the card in the list
+     * @return The card at the position
+     */
     @Override
     public DialogueCard getItem(int position) {
         return mDialogueCards.get(position);
     }
 
+    /**
+     * @param position The position of the card in the list
+     * @return Id of the card is the position
+     */
     @Override
     public long getItemId(int position) {
         return position;
     }
 
+    /**
+     * This method will devide the headers and listitems in the list. If header the item must look differently
+     * When item
+     *
+     * @param position The position of the card
+     * @param view view
+     * @param viewGroup viewgroup
+     * @return
+     */
     @Override
     public View getView(int position, View view, ViewGroup viewGroup) {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        // The item in the list is an header when
+        // matches a digit and a point and after a space or a 1.
+        // the card must be the same as the card after otherwise it isn't a header
+        // for that there must be a check that the card is not the last one
         if (mDialogueCards.get(position).getTitle().matches("\\d\\.(\\s|1).*") &&
                         position + 1 < mDialogueCards.size() &&
                         mDialogueCards.get(position).getTitle() == mDialogueCards.get(position + 1).getTitle()) {
