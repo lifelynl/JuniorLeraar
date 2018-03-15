@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#25167A</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDark">#303f9f</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">#99FF4081</color>
 
 
     <color name="colorDidactisch">#25167A</color>
-    <color name="colorDidAccent">#CC25167A</color>
+    <color name="colorDidAccent">#6125167a</color>
+    <color name="colorDid60">#5425167a</color>
+
     <color name="colorCollegiaal">#FFD200</color>
     <color name="colorCollAccent">#CCFFD200</color>
+    <color name="colorColl60">#99ffd200</color>
+
     <color name="colorPedagogisch">#00A7D3</color>
     <color name="colorPedAccent">#CC00A7D3</color>
+    <color name="colorPed60">#9900a7d3</color>
 </resources>

@@ -5,6 +5,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorDid60</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -16,21 +17,22 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorDidactisch</item>
         <item name="colorPrimaryDark">@color/colorDidAccent</item>
+        <item name="colorAccent">@color/colorDid60</item>
     </style>
 
     <style name="Collegiaal" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorCollegiaal</item>
         <item name="colorPrimaryDark">@color/colorCollAccent</item>
+        <item name="colorAccent">@color/colorColl60</item>
     </style>
 
     <style name="Peda" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPedagogisch</item>
         <item name="colorPrimaryDark">@color/colorPedAccent</item>
+        <item name="colorAccent">@color/colorPed60</item>
     </style>
-
-
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 

@@ -68,6 +68,9 @@ public class DialogueCardAdapter extends BaseAdapter
     @Override
     public View getView(int position, View view, ViewGroup viewGroup) {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+
+
         // The item in the list is an header when
         // matches a digit and a point and after a space or a 1.
         // the card must be the same as the card after otherwise it isn't a header
@@ -80,6 +83,7 @@ public class DialogueCardAdapter extends BaseAdapter
             TextView item_section_title = (TextView) view.findViewById(R.id.list_item_section_title);
             item_section_title.setText((mDialogueCards.get(position)).getCompetence());
             view.setOnClickListener(null);
+            setBackgroundColor(item_section_title, true, mDialogueCards.get(position).getTheme());
         }
         else
         {
@@ -87,7 +91,48 @@ public class DialogueCardAdapter extends BaseAdapter
             view = inflater.inflate(R.layout.list_item, viewGroup, false);
             TextView item_title = (TextView) view.findViewById(R.id.list_item_title);
             item_title.setText((mDialogueCards.get(position)).getTitle());
+            setBackgroundColor(item_title, false, mDialogueCards.get(position).getTheme());
         }
         return view;
+    }
+
+    private void setBackgroundColor(TextView text, boolean title, String theme){
+        if (title) {
+            switch (theme){
+                case "Didactisch Bekwaam":
+                    text.setBackgroundColor(context.getResources().getColor(R.color.colorDidAccent));
+                    break;
+                case "Collegiale Samenwerking":
+                    text.setBackgroundColor(context.getResources().getColor(R.color.colorCollAccent));
+                    break;
+                case "Pedagogisch Bekwaam":
+                    text.setBackgroundColor(context.getResources().getColor(R.color.colorPedAccent));
+                    break;
+            }
+        } else {
+            switch (theme){
+                case "Didactisch Bekwaam":
+                    text.setBackgroundColor(context.getResources().getColor(R.color.colorDid60));
+                    break;
+                case "Collegiale Samenwerking":
+                    text.setBackgroundColor(context.getResources().getColor(R.color.colorColl60));
+                    break;
+                case "Pedagogisch Bekwaam":
+                    text.setBackgroundColor(context.getResources().getColor(R.color.colorPed60));
+                    break;
+            }
+        }
+
+//        switch (theme){
+//            case "Didactisch Bekwaam":
+//                context.setTheme(context.getResources(R.style.Dida));
+//                break;
+//            case "Collegiale Samenwerking":
+//                context.setTheme(context.getResources(R.style.Coll));
+//                break;
+//            case "Pedagogisch Bekwaam":
+//                context.setTheme(context.getResources(R.style.Peda));
+//                break;
+//        }
     }
 }
