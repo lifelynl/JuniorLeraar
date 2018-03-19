@@ -31,11 +31,10 @@ public class StartbekwaamFragment extends Fragment
     {
         // Required empty public constructor
     }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        View SBrootView = inflater.inflate(R.layout.fragment_card_sb, container, false);
+        View SBrootView = inflater.inflate(R.layout.fragment_card, container, false);
         SBrootView.setTag(TAG);
 
 //        mRecyclerview = (RecyclerView) rootView.findViewById(R.id.startbekwaamlist);
@@ -76,44 +75,12 @@ public class StartbekwaamFragment extends Fragment
         System.out.println(title);
         DataSource source = new DataSource();
         DialogueCard currentCardFull = source.getCardFromTitleStartbekwaam(title);
-        String currentResult = currentCard.getResultText();
-        String currentTeacher = currentCard.getTeacherText();
-        String currentQuestion = currentCard.getQuestionText();
-        System.out.println("vanuit SBFragment"+currentCardFull);
-        this.displayCard(currentTeacher, currentResult, currentQuestion, view);
+        String currentResult = currentCardFull.getResultText();
+        String currentTeacher = currentCardFull.getTeacherText();
+        String currentQuestion = currentCardFull.getQuestionText();
+        TabActivity.displayCard(currentResult, currentTeacher, currentQuestion, view);
     }
-    public void displayCard(String result, String indicators, String reflection, View view){
-        setResult(view, result);
-        setIndicators(view, indicators);
-        setReflection(view, reflection);
-    }
-
-    public void setResult(View view, String result){
-        TextView textview = (TextView) view.findViewById(R.id.result_sb);
-        textview.setText(result);
-    }
-    public void setIndicators(View view,String indicators){
-        TextView textview = (TextView) view.findViewById(R.id.indicators_sb);
-        textview.setText(indicators);
-    }
-    public void setReflection(View view,String reflection){
-        TextView textview = (TextView) view.findViewById(R.id.reflection_sb);
-        textview.setText(reflection);
-    }
-
     public void onResume() {
         super.onResume();  // Always call the superclass method first
-        updateUI();
-    }
-
-    public void updateUI() {
-
-//        if (mAdapter == null) {
-//            mAdapter = new DialogueCardAdapter();
-//            mRecyclerview.setAdapter(mAdapter);
-//        } else {
-//            mAdapter.updateList(mDialogueCards);
-//            mAdapter.notifyDataSetChanged();
-//        }
     }
 }
