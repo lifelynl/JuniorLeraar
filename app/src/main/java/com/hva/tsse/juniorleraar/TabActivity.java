@@ -1,27 +1,28 @@
 package com.hva.tsse.juniorleraar;
 
-        import android.os.Bundle;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-        import android.view.View;
-        import android.widget.TextView;
-
-        import com.hva.tsse.juniorleraar.adapter.SectionsPagerAdapter;
+import android.text.SpannableString;
+import android.text.TextUtils;
+import android.text.style.LeadingMarginSpan;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.TextView;
+import com.hva.tsse.juniorleraar.adapter.SectionsPagerAdapter;
 import com.hva.tsse.juniorleraar.fragment.BekwaamFragment;
 import com.hva.tsse.juniorleraar.fragment.StartbekwaamFragment;
 import com.hva.tsse.juniorleraar.model.DialogueCard;
+import java.lang.reflect.Field;
 
 public class TabActivity extends AppCompatActivity {
-
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
     private TabLayout tabLayout;
-
     private static final String TITLE_FRAGMENT_BEKWAAM = "BEKWAAM";
     private static final String TITLE_FRAGMENT_STARTBEKWAAM = "STARTBEKWAAM";
-
     private DialogueCard mDialogueCard;
 
     public DialogueCard getmDialogueCard() {
@@ -43,18 +44,68 @@ public class TabActivity extends AppCompatActivity {
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
         setUpViewPager(mViewPager);
-
         tabLayout = (TabLayout) findViewById(R.id.tablayout);
         tabLayout.setupWithViewPager(mViewPager);
 
+        //set current card and title
         this.mDialogueCard = (DialogueCard) getIntent().getSerializableExtra("selectedCard");
         String mainTitle = this.mDialogueCard.getTitle();
-        toolbar.setTitle(mainTitle);
+        //set colors for toolbar & tabbar
+        setBackgroundColorToolbar(this.mDialogueCard.getTheme(), toolbar);
+        setBackgroundColorTabs(this.mDialogueCard.getTheme(), tabLayout);
+        //Displaying long titles
+        try {
+            Field f = toolbar.getClass().getDeclaredField("mTitleTextView");
+            f.setAccessible(true);
+            final TextView toolbarTextView = (TextView) f.get(toolbar);
+            toolbarTextView.setEllipsize(TextUtils.TruncateAt.MARQUEE);
+            toolbarTextView.setFocusable(true);
+            toolbarTextView.setFocusableInTouchMode(true);
+            toolbarTextView.requestFocus();
+            toolbarTextView.setSingleLine(true);
+            toolbarTextView.setSelected(false);
+            toolbarTextView.setMarqueeRepeatLimit(1);
+            // set text on Textview
+            toolbarTextView.setText(mainTitle);
+            toolbar.setOnTouchListener(new View.OnTouchListener() {
+                @Override
+                public boolean onTouch(View v, MotionEvent event) {
+                    if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                        if (toolbarTextView.isSelected()) {
+                            toolbarTextView.setSelected(false);
+                        } else {
+                            toolbarTextView.setSelected(true);
+                        }
+                        return true;
+                    } else return false;
+                }
+            });
+        }
+        catch (NoSuchFieldException e) {
+        }
+        catch (IllegalAccessException e) {
+        }
     }
-    public static String makeList(String list){
-        list = list.replace("#", "\n\u2022");
-        list = list.replace("$", "\u2022");
-        return list;
+    //indent after newline for bullet point list
+    static SpannableString createIndentedText(String text, int marginFirstLine, int marginNextLines) {
+        SpannableString result=new SpannableString(text);
+        result.setSpan(new LeadingMarginSpan.Standard(marginFirstLine, marginNextLines),0,text.length(),0);
+        return result;
+    }
+    //make list with indent
+    private static SpannableString makeList(String list){
+        String bullet = "\u2022";
+        String bulletNewline ="\n\u2022";
+        list = list.replace("$", bullet);
+        list = list.replace("#", bulletNewline);
+        if(list.contains(bullet)){
+            SpannableString listFinal = createIndentedText(list, 0,25);
+            return listFinal;
+        }
+        else{
+            SpannableString listFinal = createIndentedText(list, 0,15);
+            return listFinal;
+        }
     }
     public static void displayCard(String result, String indicators, String reflection, View view){
         setResult(view, result);
@@ -62,18 +113,46 @@ public class TabActivity extends AppCompatActivity {
         setReflection(view, reflection);
     }
     public static void setResult(View view, String result){
+//        SpannableString resultFinal = makeList(result);
         TextView textview = (TextView) view.findViewById(R.id.result);
         textview.setText(result);
     }
     public static void setIndicators(View view,String indicators){
-        indicators = TabActivity.makeList(indicators);
+        SpannableString indicatorsFinal = TabActivity.makeList(indicators);
         TextView textview = (TextView) view.findViewById(R.id.indicators);
-        textview.setText(indicators);
+        textview.setText(indicatorsFinal);
     }
     public static void setReflection(View view,String reflection){
-        reflection = TabActivity.makeList(reflection);
+        SpannableString reflectionFinal = TabActivity.makeList(reflection);
         TextView textview = (TextView) view.findViewById(R.id.reflection);
-        textview.setText(reflection);
+        textview.setText(reflectionFinal);
+    }
+    private void setBackgroundColorToolbar(String theme, Toolbar toolbar){
+            switch (theme){
+                case "Didactisch Bekwaam":
+                    toolbar.setBackgroundColor(getResources().getColor((R.color.colorDidactisch)));
+                    break;
+                case "Collegiale Samenwerking":
+                    toolbar.setBackgroundColor(getResources().getColor((R.color.colorCollegiaal)));
+                    break;
+                case "Pedagogisch Bekwaam":
+                    toolbar.setBackgroundColor(getResources().getColor((R.color.colorPedagogisch)));
+                    break;
+            }
+    }
+    private void setBackgroundColorTabs(String theme, TabLayout tabLayout){
+        switch (theme){
+            case "Didactisch Bekwaam":
+                tabLayout.setBackgroundColor(getResources().getColor((R.color.colorDidAccent)));
+                break;
+            case "Collegiale Samenwerking":
+                tabLayout.setBackgroundColor(getResources().getColor((R.color.colorCollAccent)));
+                break;
+            case "Pedagogisch Bekwaam":
+                tabLayout.setBackgroundColor(getResources().getColor((R.color.colorPedAccent)));
+                break;
+        }
+
     }
 
     // Options menu which we don't need unless PO wants HET TRAPPETJE

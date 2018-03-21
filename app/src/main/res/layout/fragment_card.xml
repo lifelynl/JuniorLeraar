@@ -58,7 +58,8 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/result_title" />
+                    app:layout_constraintTop_toBottomOf="@+id/result_title"
+                    android:gravity="start" />
 
                 <TextView
                     android:id="@+id/indicators_title"
@@ -83,12 +84,13 @@
                     android:layout_marginStart="8dp"
                     android:lineSpacingExtra="3sp"
                     android:text=""
-                    android:textAlignment="textStart"
+                    android:textAlignment="viewStart"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/indicators_title" />
+                    app:layout_constraintTop_toBottomOf="@+id/indicators_title"
+                    android:gravity="start" />
 
                 <TextView
                     android:id="@+id/reflection_title"
@@ -117,7 +119,8 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/reflection_title" />
+                    app:layout_constraintTop_toBottomOf="@+id/reflection_title"
+                    android:gravity="start" />
 
             </android.support.constraint.ConstraintLayout>
 
