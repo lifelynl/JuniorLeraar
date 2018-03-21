@@ -14,6 +14,6 @@
         android:listSelector="@color/colorPrimaryDark"
         android:padding="10dp"
         android:text="Section"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@android:color/white"
         android:textSize="16dp" />
 </LinearLayout>
