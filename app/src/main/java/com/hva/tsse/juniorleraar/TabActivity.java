@@ -50,9 +50,11 @@ public class TabActivity extends AppCompatActivity {
         //set current card and title
         this.mDialogueCard = (DialogueCard) getIntent().getSerializableExtra("selectedCard");
         String mainTitle = this.mDialogueCard.getTitle();
-        //set colors for toolbar & tabbar
-        setBackgroundColorToolbar(this.mDialogueCard.getTheme(), toolbar);
-        setBackgroundColorTabs(this.mDialogueCard.getTheme(), tabLayout);
+        //set colors for toolbar & tabbar & statusbar
+        String theme = this.mDialogueCard.getTheme();
+        setBackgroundColorToolbar(theme, toolbar);
+        setBackgroundColorTabs(theme, tabLayout);
+        setStatusBarColor(theme);
         //Displaying long titles
         try {
             Field f = toolbar.getClass().getDeclaredField("mTitleTextView");
@@ -103,7 +105,7 @@ public class TabActivity extends AppCompatActivity {
             return listFinal;
         }
         else{
-            SpannableString listFinal = createIndentedText(list, 0,15);
+            SpannableString listFinal = createIndentedText(list, 0,10);
             return listFinal;
         }
     }
@@ -113,9 +115,9 @@ public class TabActivity extends AppCompatActivity {
         setReflection(view, reflection);
     }
     public static void setResult(View view, String result){
-//        SpannableString resultFinal = makeList(result);
+        SpannableString resultFinal = makeList(result);
         TextView textview = (TextView) view.findViewById(R.id.result);
-        textview.setText(result);
+        textview.setText(resultFinal);
     }
     public static void setIndicators(View view,String indicators){
         SpannableString indicatorsFinal = TabActivity.makeList(indicators);
@@ -154,7 +156,19 @@ public class TabActivity extends AppCompatActivity {
         }
 
     }
-
+    private void setStatusBarColor(String theme) {
+        switch (theme) {
+            case "Didactisch Bekwaam":
+                ColorUtils.darkenStatusBar(this, R.color.colorDidactisch);
+                break;
+            case "Collegiale Samenwerking":
+                ColorUtils.darkenStatusBar(this, R.color.colorCollegiaal);
+                break;
+            case "Pedagogisch Bekwaam":
+                ColorUtils.darkenStatusBar(this, R.color.colorPedagogisch);
+                break;
+        }
+    }
     // Options menu which we don't need unless PO wants HET TRAPPETJE
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
