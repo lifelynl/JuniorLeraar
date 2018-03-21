@@ -25,6 +25,8 @@ public class Peda extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_peda);
+
+        ColorUtils.darkenStatusBar(this, R.color.colorPedagogisch);
         this.setTitle("Pedagogisch Bekwaam");
 
         list_pedagogisch_bekwaam = (ListView) findViewById(R.id.list_pedagogisch_bekwaam);
