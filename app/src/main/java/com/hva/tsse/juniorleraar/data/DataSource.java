@@ -1,4 +1,4 @@
-package com.hva.tsse.juniorleraar.firebase;
+package com.hva.tsse.juniorleraar.data;
 
 import android.content.Context;
 import android.util.Log;
@@ -9,18 +9,27 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Make sure you add a list with the constructor with list
+ * Otherwise there are no lists to retrieve
+ *
  * Created by Melanie on 22-2-2018.
  */
 
 public class DataSource {
     private Context context;
     private static List<DialogueCard> mDialogueCards;
+    private static final String TAG = "DATASOURCECLASS";
 
     /**
      * Empty constructor because the list is static
      * It is the same so it can be retrieved from everywhere
      */
     public DataSource(){
+//        if (mDialogueCards==null){
+//            Database data = new Database(context);
+//            mDialogueCards = data.getAllDialogueCards();
+//        }
+        logList(mDialogueCards);
     }
 
     /**
@@ -29,6 +38,7 @@ public class DataSource {
      */
     public DataSource(List<DialogueCard> mDialogueCards){
         this.mDialogueCards = mDialogueCards;
+        logList(mDialogueCards);
     }
 
     /**
@@ -62,7 +72,7 @@ public class DataSource {
      */
     private void logList(List<DialogueCard> list){
         for (DialogueCard card : list){
-            Log.w("TAG", card.toString());
+            Log.w(TAG, card.toString());
         }
     }
 

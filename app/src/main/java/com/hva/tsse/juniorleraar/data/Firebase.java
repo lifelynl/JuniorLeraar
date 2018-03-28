@@ -1,4 +1,4 @@
-package com.hva.tsse.juniorleraar.firebase;
+package com.hva.tsse.juniorleraar.data;
 
 import android.content.Context;
 import android.util.Log;
@@ -32,6 +32,7 @@ public class Firebase implements Serializable {
      */
     public Firebase() {
         mDatabase = FirebaseDatabase.getInstance();
+        mDatabase.setPersistenceEnabled(true);
         mDatabaseReference = mDatabase.getReferenceFromUrl(mURL);
         mDialogueCards = new ArrayList<>();
     }

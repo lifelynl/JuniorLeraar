@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.hva.tsse.juniorleraar.R;
 import com.hva.tsse.juniorleraar.TabActivity;
-import com.hva.tsse.juniorleraar.firebase.DataSource;
+import com.hva.tsse.juniorleraar.data.DataSource;
 import com.hva.tsse.juniorleraar.model.DialogueCard;
 
 

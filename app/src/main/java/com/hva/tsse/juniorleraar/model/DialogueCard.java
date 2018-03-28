@@ -100,7 +100,7 @@ public class DialogueCard implements Serializable {
     }
 
     public String toString(){
-        return level + ":\t" + theme + ",\t" + competence + ",\t" + title;
+        return level + ",\t" + theme + ",\t" + competence + ",\t" + title + ",\t" + resultText + ",\t" + teacherText + ",\t" + questionText;
     }
 }
 

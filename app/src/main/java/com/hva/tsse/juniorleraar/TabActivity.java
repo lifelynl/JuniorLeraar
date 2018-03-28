@@ -71,6 +71,5 @@ public class TabActivity extends AppCompatActivity {
         mSectionsPagerAdapter.addFragment(new BekwaamFragment(),TITLE_FRAGMENT_BEKWAAM );
         viewpager.setAdapter(mSectionsPagerAdapter);
     }
-
 }
 

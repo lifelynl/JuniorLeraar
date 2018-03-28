@@ -8,7 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.hva.tsse.juniorleraar.adapter.DialogueCardAdapter;
-import com.hva.tsse.juniorleraar.firebase.DataSource;
+import com.hva.tsse.juniorleraar.data.DataSource;
 import com.hva.tsse.juniorleraar.model.DialogueCard;
 
 import java.util.ArrayList;
