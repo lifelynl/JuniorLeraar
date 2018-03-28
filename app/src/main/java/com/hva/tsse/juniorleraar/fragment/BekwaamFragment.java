@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.hva.tsse.juniorleraar.R;
 import com.hva.tsse.juniorleraar.TabActivity;
@@ -25,7 +24,6 @@ public class BekwaamFragment extends Fragment
     {
         // Required empty public constructor
     }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
@@ -43,25 +41,7 @@ public class BekwaamFragment extends Fragment
         String currentTeacher = currentCardFull.getTeacherText();
         String currentQuestion = currentCardFull.getQuestionText();
         System.out.println("vanuit bekwaamfragment"+currentCardFull);
-        this.displayCard(currentTeacher, currentResult, currentQuestion, view);
-    }
-    public void displayCard(String result, String indicators, String reflection, View view){
-        setResult(view, result);
-        setIndicators(view, indicators);
-        setReflection(view, reflection);
-        view.invalidate();
-    }
-
-    public void setResult(View view, String result){
-        TextView textview = (TextView) view.findViewById(R.id.result);
-        textview.setText(result);
-    }
-    public void setIndicators(View view,String indicators){
-        TextView textview = (TextView) view.findViewById(R.id.indicators);
-        textview.setText(indicators);
-    }
-    public void setReflection(View view,String reflection){
-        TextView textview = (TextView) view.findViewById(R.id.reflection);
-        textview.setText(reflection);
+        TabActivity tab = new TabActivity();
+        tab.displayCard(currentResult, currentTeacher, currentQuestion, view);
     }
 }

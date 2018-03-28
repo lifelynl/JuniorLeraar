@@ -25,6 +25,7 @@ public class Dida extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dida);
+        ColorUtils.darkenStatusBar(this, R.color.colorDidactisch);
         this.setTitle("Didactisch bekwaam");
 
         list_didactisch_bekwaam = (ListView) findViewById(R.id.list_didactisch_bekwaam);

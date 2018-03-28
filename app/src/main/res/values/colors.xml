@@ -5,10 +5,9 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorBackground">#99FF4081</color>
 
-
     <color name="colorDidactisch">#25167A</color>
-    <color name="colorDidAccent">#6125167a</color>
-    <color name="colorDid60">#5425167a</color>
+    <color name="colorDidAccent">#5925167a</color>
+    <color name="colorDid60">#5925167a</color>
 
     <color name="colorCollegiaal">#FFD200</color>
     <color name="colorCollAccent">#CCFFD200</color>
