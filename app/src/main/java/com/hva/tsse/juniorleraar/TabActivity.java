@@ -96,18 +96,15 @@ public class TabActivity extends AppCompatActivity {
     }
     //make list with indent
     private static SpannableString makeList(String list){
-        String bullet = "\u2022";
-        String bulletNewline ="\n\u2022";
-        list = list.replace("$", bullet);
+        String bullet = "\u2022 ";
+        String bulletNewline ="\n\u2022 ";
+        list = list.replace("$ ", bullet);
+        list = list.replace("# ", bulletNewline);
+        list = list.replace(" #", bulletNewline);
         list = list.replace("#", bulletNewline);
-        if(list.contains(bullet)){
-            SpannableString listFinal = createIndentedText(list, 0,25);
+            SpannableString listFinal = createIndentedText(list, 0,15);
             return listFinal;
-        }
-        else{
-            SpannableString listFinal = createIndentedText(list, 0,10);
-            return listFinal;
-        }
+
     }
     public static void displayCard(String result, String indicators, String reflection, View view){
         setResult(view, result);
@@ -115,9 +112,8 @@ public class TabActivity extends AppCompatActivity {
         setReflection(view, reflection);
     }
     public static void setResult(View view, String result){
-        SpannableString resultFinal = makeList(result);
         TextView textview = (TextView) view.findViewById(R.id.result);
-        textview.setText(resultFinal);
+        textview.setText(result);
     }
     public static void setIndicators(View view,String indicators){
         SpannableString indicatorsFinal = TabActivity.makeList(indicators);
