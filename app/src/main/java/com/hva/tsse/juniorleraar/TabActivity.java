@@ -46,14 +46,12 @@ public class TabActivity extends AppCompatActivity {
         setUpViewPager(mViewPager);
         tabLayout = (TabLayout) findViewById(R.id.tablayout);
         tabLayout.setupWithViewPager(mViewPager);
-
         //set current card and title
         this.mDialogueCard = (DialogueCard) getIntent().getSerializableExtra("selectedCard");
         String mainTitle = this.mDialogueCard.getTitle();
         //set colors for toolbar & tabbar & statusbar
         String theme = this.mDialogueCard.getTheme();
-        setBackgroundColorToolbar(theme, toolbar);
-        setBackgroundColorTabs(theme, tabLayout);
+        setBackgroundColors(theme, toolbar, tabLayout);
         setStatusBarColor(theme);
         //Displaying long titles
         try {
@@ -102,7 +100,7 @@ public class TabActivity extends AppCompatActivity {
         list = list.replace("# ", bulletNewline);
         list = list.replace(" #", bulletNewline);
         list = list.replace("#", bulletNewline);
-            SpannableString listFinal = createIndentedText(list, 0,15);
+            SpannableString listFinal = createIndentedText(list, 0,20);
             return listFinal;
 
     }
@@ -125,32 +123,21 @@ public class TabActivity extends AppCompatActivity {
         TextView textview = (TextView) view.findViewById(R.id.reflection);
         textview.setText(reflectionFinal);
     }
-    private void setBackgroundColorToolbar(String theme, Toolbar toolbar){
+    private void setBackgroundColors(String theme, Toolbar toolbar, TabLayout tablayout){
             switch (theme){
                 case "Didactisch Bekwaam":
                     toolbar.setBackgroundColor(getResources().getColor((R.color.colorDidactisch)));
+                    tabLayout.setBackgroundColor(getResources().getColor((R.color.colorDidactisch)));
                     break;
                 case "Collegiale Samenwerking":
                     toolbar.setBackgroundColor(getResources().getColor((R.color.colorCollegiaal)));
+                    tablayout.setBackgroundColor(getResources().getColor((R.color.colorCollegiaal)));
                     break;
                 case "Pedagogisch Bekwaam":
                     toolbar.setBackgroundColor(getResources().getColor((R.color.colorPedagogisch)));
+                    tablayout.setBackgroundColor(getResources().getColor((R.color.colorPedagogisch)));
                     break;
             }
-    }
-    private void setBackgroundColorTabs(String theme, TabLayout tabLayout){
-        switch (theme){
-            case "Didactisch Bekwaam":
-                tabLayout.setBackgroundColor(getResources().getColor((R.color.colorDidAccent)));
-                break;
-            case "Collegiale Samenwerking":
-                tabLayout.setBackgroundColor(getResources().getColor((R.color.colorCollAccent)));
-                break;
-            case "Pedagogisch Bekwaam":
-                tabLayout.setBackgroundColor(getResources().getColor((R.color.colorPedAccent)));
-                break;
-        }
-
     }
     private void setStatusBarColor(String theme) {
         switch (theme) {

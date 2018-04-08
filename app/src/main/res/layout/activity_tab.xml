@@ -34,23 +34,28 @@
             android:id="@+id/tablayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layoutDirection="ltr"
-            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
-            app:tabTextColor="#000">
+            android:textAllCaps="false"
+            app:tabIndicatorColor="@android:color/white"
+            app:tabIndicatorHeight="2dp"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextAppearance="@style/MyCustomTextAppearance"
+            app:tabTextColor="@android:color/white">
 
             <android.support.design.widget.TabItem
                 android:id="@+id/tab_startbekwaam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tab_startbekwaam"
-                app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget" />
+                android:textAllCaps="false"
+                app:tabTextAppearance="@style/MyCustomTextAppearance" />
 
             <android.support.design.widget.TabItem
                 android:id="@+id/tab_bekwaam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tab_bekwaam"
-                app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget" />
+                android:textAllCaps="false"
+                app:tabTextAppearance="@style/MyCustomTextAppearance" />
 
         </android.support.design.widget.TabLayout>
 
