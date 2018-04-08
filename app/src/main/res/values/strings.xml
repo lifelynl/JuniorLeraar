@@ -1,3 +1,38 @@
 <resources>
+    <!--App name-->
     <string name="app_name">Junior Leraar</string>
+
+    <!--Firebase URL-->
+    <string name="firebase_url">https://junior-leraar.firebaseio.com/Dialoguecard</string>
+
+    <!--Tags-->
+    <string name="tag_datasource">DatasourceClass</string>
+    <string name="tag_firebase">FirebaseClass</string>
+    <string name="tag_dialoguecardadapter">DialogueCardAdapterClass</string>
+    <string name="tag_sectionspageradapter">SectionsPagerAdapterClass</string>
+
+    <!--Titles of activity-->
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_info">Info</string>
+
+    <!--tabnames-->
+    <string name="tab_startbekwaam">Startbekwaam</string>
+    <string name="tab_bekwaam">Bekwaam</string>
+
+    <!--Theme-->
+    <string name="didactisch_bekwaam">Didactisch Bekwaam</string>
+    <string name="collegiale_samenwerking">Collegiale Samenwerking</string>
+    <string name="pedagogisch_bekwaam">Pedagogisch Bekwaam</string>
+
+    <!--Level-->
+    <string name="startbekwaam">Startbekwaam</string>
+    <string name="bekwaam">Bekwaam</string>
+
+    <!--Info-->
+    <string name="info">PLACEHOLDER. Leraar zijn is een prachtig en ook veeleisend beroep. Een beroep waar je lerarenopleiding je op kan voorbereiden, maar je niet voor kan klaarstomen. Als startbekwaam leraar zul je je verder moeten ontwikkelen. Van startbekwaam naar volledig bekwaam, naar expert, naar specialist misschien. Als zij-instromer heb je vaak al volledige verantwoordelijkheid voor enkele klassen. Intussen moet je groeien naar het niveau startbekwaam.
+\n \nDie ontwikkeling naar startbekwaam (als je zij-instromer bent) of bekwaam gaat makkelijker en sneller als deze doelgericht is. Je ontwikkelt je gericht als er sprake is van een uitdagende leeromgeving op de school, van goede begeleiding, inspirerende collega’s, ruimte om te experimenteren, en toegang tot kennis en theorie die verdiept en uitdaagt.
+\n \nIn het project Junior Leraar Amsterdam werken de Amsterdamse lerarenopleidingen en scholen in het po en vo samen aan zo’n inspirerende leer- en werkomgeving. Op deze website zijn de producten uit het project te vinden: een box met dialoogkaarten, een digitale zelfscan en een assessment om je niveau ‘bekwaam’ (of startbekwaam, als je zij-instromer bent) vast te leggen en te vieren.
+</string>
+
 </resources>
