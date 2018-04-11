@@ -1,9 +1,7 @@
 package com.hva.tsse.juniorleraar;
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
@@ -11,6 +9,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.hva.tsse.juniorleraar.data.DataSource;
 import com.hva.tsse.juniorleraar.data.Firebase;
@@ -32,6 +31,7 @@ public class Home extends AppCompatActivity {
     private Button mDida;
     private Button mColle;
     private Button mPeda;
+    private ImageView mInfo;
 
     private static boolean FIRSTRUN = true;
     private final String TAG = "HOMECLASS";
@@ -41,6 +41,8 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        getSupportActionBar().hide();
+
         if (FIRSTRUN) {
             Firebase mFirebase = new Firebase();
             mFirebase.getData();
@@ -95,7 +97,7 @@ public class Home extends AppCompatActivity {
         Button mDidaBtn = (Button) findViewById(R.id.btn_didactisch);
         Button mColleBtn = (Button) findViewById(R.id.btn_collegiaal);
         Button mPedaBtn = (Button) findViewById(R.id.btn_pedagogisch);
-
+        ImageView mInfo = (ImageView) findViewById(R.id.infoknop);
 
         // Nav
         mDidaBtn.setOnClickListener(new View.OnClickListener() {
@@ -119,6 +121,14 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
                 Intent pedaIntent = new Intent(Home.this, Peda.class);
                 Home.this.startActivity(pedaIntent);
+            }
+        });
+
+        mInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent info = new Intent(Home.this, Info.class);
+                Home.this.startActivity(info);
             }
         });
     }
