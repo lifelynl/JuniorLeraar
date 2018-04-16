@@ -38,8 +38,8 @@
             app:tabIndicatorColor="@android:color/white"
             app:tabIndicatorHeight="2dp"
             app:tabSelectedTextColor="@android:color/white"
-            app:tabTextAppearance="@style/MyCustomTextAppearance"
-            app:tabTextColor="@android:color/white">
+            style="@style/AppTabLayout"
+            app:tabTextAppearance="@style/AppTabTextAppearance">
 
             <android.support.design.widget.TabItem
                 android:id="@+id/tab_startbekwaam"
@@ -47,16 +47,16 @@
                 android:layout_height="wrap_content"
                 android:text="@string/tab_startbekwaam"
                 android:textAllCaps="false"
-                app:tabTextAppearance="@style/MyCustomTextAppearance" />
-
+                textAllCaps="false"
+/>
             <android.support.design.widget.TabItem
                 android:id="@+id/tab_bekwaam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tab_bekwaam"
                 android:textAllCaps="false"
-                app:tabTextAppearance="@style/MyCustomTextAppearance" />
-
+                textAllCaps="false"
+                />
         </android.support.design.widget.TabLayout>
 
     </android.support.design.widget.AppBarLayout>
