@@ -1,4 +1,4 @@
-package com.hva.tsse.juniorleraar;
+package com.hva.tsse.juniorleraar.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.hva.tsse.juniorleraar.R;
 import com.hva.tsse.juniorleraar.data.DataSource;
 import com.hva.tsse.juniorleraar.data.Firebase;
 import com.hva.tsse.juniorleraar.model.DialogueCard;
@@ -32,6 +33,7 @@ public class Home extends AppCompatActivity {
     private Button mColle;
     private Button mPeda;
     private ImageView mInfo;
+    private ImageView mSearch;
 
     private static boolean FIRSTRUN = true;
     private final String TAG = "HOMECLASS";
@@ -52,52 +54,16 @@ public class Home extends AppCompatActivity {
 
         //Get JSON values from JSON file
         if (FIRSTRUN) {
-            mDialoguecards = new ArrayList<>();
-            try {
-                Log.w(TAG, "BEGIN JSON");
-                JSONObject obj = new JSONObject(loadJSONFromAsset());
-                JSONArray m_jArry = obj.getJSONArray("Dialoguecard");
-                ArrayList<HashMap<String, String>> formList = new ArrayList<HashMap<String, String>>();
-                HashMap<String, String> m_li;
-                Log.w(TAG, obj.toString());
-
-                for (int i = 0; i < m_jArry.length(); i++) {
-                    JSONObject jo_inside = m_jArry.getJSONObject(i);
-                    Log.w(TAG, jo_inside.getString("title"));
-
-                    String theme = jo_inside.getString("theme");
-                    String level = jo_inside.getString("level");
-                    String title = jo_inside.getString("title");
-                    String competence = jo_inside.getString("competence");
-                    String resultText = jo_inside.getString("resultText");
-                    String teacherText = jo_inside.getString("teacherText");
-                    String questionText = jo_inside.getString("questionText");
-
-                    //Add your values in your `ArrayList` as below:
-                    m_li = new HashMap<String, String>();
-                    m_li.put("theme", theme);
-                    m_li.put("level", level);
-                    m_li.put("title", title);
-                    m_li.put("competence", competence);
-                    m_li.put("resultText", resultText);
-                    m_li.put("teacherText", teacherText);
-                    m_li.put("questionText", questionText);
-
-                    mDialoguecards.add(new DialogueCard(theme, level, title, competence, resultText, teacherText, questionText));
-                    formList.add(m_li);
-                }
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-            FIRSTRUN = false;
-            new DataSource(mDialoguecards);
-            Log.w(TAG, mDialoguecards.toString());
+            JSON();
         }
+
         // findViews
         Button mDidaBtn = (Button) findViewById(R.id.btn_didactisch);
         Button mColleBtn = (Button) findViewById(R.id.btn_collegiaal);
         Button mPedaBtn = (Button) findViewById(R.id.btn_pedagogisch);
+
         ImageView mInfo = (ImageView) findViewById(R.id.infoknop);
+        ImageView mSearch = (ImageView) findViewById(R.id.search);
 
         // Nav
         mDidaBtn.setOnClickListener(new View.OnClickListener() {
@@ -131,6 +97,58 @@ public class Home extends AppCompatActivity {
                 Home.this.startActivity(info);
             }
         });
+
+        mSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+//                SearchFragment fragment = new SearchFragment();
+//                transaction.add(R.id.searchcontainer, fragment); //ERROR ON THIS LINE
+//                transaction.commit();
+            }
+        });
+    }
+    public void JSON(){
+        mDialoguecards = new ArrayList<>();
+        try {
+            Log.w(TAG, "BEGIN JSON");
+            JSONObject obj = new JSONObject(loadJSONFromAsset());
+            JSONArray m_jArry = obj.getJSONArray("Dialoguecard");
+            ArrayList<HashMap<String, String>> formList = new ArrayList<HashMap<String, String>>();
+            HashMap<String, String> m_li;
+            Log.w(TAG, obj.toString());
+
+            for (int i = 0; i < m_jArry.length(); i++) {
+                JSONObject jo_inside = m_jArry.getJSONObject(i);
+                Log.w(TAG, jo_inside.getString("title"));
+
+                String theme = jo_inside.getString("theme");
+                String level = jo_inside.getString("level");
+                String title = jo_inside.getString("title");
+                String competence = jo_inside.getString("competence");
+                String resultText = jo_inside.getString("resultText");
+                String teacherText = jo_inside.getString("teacherText");
+                String questionText = jo_inside.getString("questionText");
+
+                //Add your values in your `ArrayList` as below:
+                m_li = new HashMap<String, String>();
+                m_li.put("theme", theme);
+                m_li.put("level", level);
+                m_li.put("title", title);
+                m_li.put("competence", competence);
+                m_li.put("resultText", resultText);
+                m_li.put("teacherText", teacherText);
+                m_li.put("questionText", questionText);
+
+                mDialoguecards.add(new DialogueCard(theme, level, title, competence, resultText, teacherText, questionText));
+                formList.add(m_li);
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        FIRSTRUN = false;
+        new DataSource(mDialoguecards);
+        Log.w(TAG, mDialoguecards.toString());
     }
 
     public String loadJSONFromAsset() {

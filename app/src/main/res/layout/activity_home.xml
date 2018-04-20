@@ -7,6 +7,11 @@
     android:layout_height="fill_parent"
     android:background="@android:color/white">
 
+    <android.support.v4.view.ViewPager
+        android:id="@+id/searchcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -23,9 +28,22 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="7"
-            android:gravity="end"
             android:orientation="horizontal"
             android:weightSum="9">
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="7" />
 
             <ImageView
                 android:id="@+id/infoknop"
@@ -34,6 +52,7 @@
                 android:layout_weight="1"
                 android:scaleType="fitEnd"
                 app:srcCompat="@android:drawable/ic_menu_info_details" />
+
         </LinearLayout>
 
         <LinearLayout
