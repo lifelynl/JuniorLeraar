@@ -38,8 +38,7 @@
             app:tabIndicatorColor="@android:color/white"
             app:tabIndicatorHeight="2dp"
             app:tabSelectedTextColor="@android:color/white"
-            style="@style/AppTabLayout"
-            app:tabTextAppearance="@style/AppTabTextAppearance">
+           >
 
             <android.support.design.widget.TabItem
                 android:id="@+id/tab_startbekwaam"
