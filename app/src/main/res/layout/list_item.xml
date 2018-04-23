@@ -13,5 +13,6 @@
         android:padding="10dp"
         android:listSelector="@color/colorColl60"
         android:text="Item"
+        android:textSize="18sp"
         android:textColor="@android:color/background_dark" />
 </LinearLayout>
