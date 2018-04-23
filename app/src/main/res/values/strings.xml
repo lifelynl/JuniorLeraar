@@ -28,7 +28,8 @@
     <!--Level-->
     <string name="startbekwaam">Startbekwaam</string>
     <string name="bekwaam">Bekwaam</string>
-
+    <string name="startbekwaam_caps">STARTBEKWAAM</string>
+    <string name="bekwaam_caps">BEKWAAM</string>
     <!--Info-->
     <string name="info">De kern van het begeleidingsinstrumentarium Junior Leraar is een kaartenbox met twee sets van 23 losse dialoogkaarten. De 23 dialoogkaarten gaan over de competentiegebieden Pedagogisch bekwaam, Didactisch bekwaam en Collegiale samenwerking. Elke kaart geeft op de voorzijde een beschrijving van de bekwaamheid en voorbeelden van docentgedrag.
         \n \nOp de achterzijde staan reflectievragen die uitnodigen tot een professionele dialoog tussen de startende leraar en zijn coach of collega over die bekwaamheid.
@@ -36,5 +37,13 @@
         \n \nAfhankelijk van de startsituatie (de zone van de naaste ontwikkeling) kan het niveau ‘startbekwaam’ of het niveau ‘bekwaam’ als aangrijpingspunt voor de dialoog genomen worden. \n \nIn de dialoog doorlopen starter en coach de stappen “Hier sta ik, dit kan ik, en dit wil ik nog verder ontwikkelen” meerdere malen. Deze stappen zijn er op gericht om uiteindelijk uiteindelijk tot het volgende niveau te komen: van Startbekwaam naar Bekwaam Leraarschap.
 
 </string>
+    <string name="info_knop">Info knop</string>
+    <string name="hogeschool_van_amsterdam_logo">Hogeschool van Amsterdam logo</string>
+    <string name="junior_leraar_logo">Junior Leraar logo</string>
+    <string name="didactisch_bekwaam_knop">Didactisch Bekwaam knop</string>
+    <string name="pedagogisch_bekwaam_knop">Pedagogisch Bekwaam knop</string>
+    <string name="collegiale_samenwerking_knop">Collegiale Samenwerking knop</string>
+    <string name="startbekwaam_knop">Knop die de informatie voor Startbekwaam weergeeft</string>
+    <string name="bekwaam_knop">Knop die de informatie voor Bekwaam weergeeft</string>
 
 </resources>

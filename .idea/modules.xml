@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JuniorLeraarApp.iml" filepath="$PROJECT_DIR$/JuniorLeraarApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JuniorLeraar.iml" filepath="$PROJECT_DIR$/JuniorLeraar.iml" />
+      <module fileurl="file://C:\Users\Julian\OneDrive\Documenten\JuniorLeraar\JuniorLeraarApp.iml" filepath="C:\Users\Julian\OneDrive\Documenten\JuniorLeraar\JuniorLeraarApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -21,10 +21,7 @@ public class TabActivity extends AppCompatActivity {
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
     private TabLayout tabLayout;
-    private static final String TITLE_FRAGMENT_BEKWAAM = "BEKWAAM";
-    private static final String TITLE_FRAGMENT_STARTBEKWAAM = "STARTBEKWAAM";
     private DialogueCard mDialogueCard;
-
     public DialogueCard getmDialogueCard() {
         return mDialogueCard;
     }
@@ -33,18 +30,16 @@ public class TabActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tab);
-
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-
         // Set up the ViewPager with the sections adapter.
-        mViewPager = (ViewPager) findViewById(R.id.container);
+        mViewPager = findViewById(R.id.container);
         setUpViewPager(mViewPager);
-        tabLayout = (TabLayout) findViewById(R.id.tablayout);
+        tabLayout = findViewById(R.id.tablayout);
         tabLayout.setupWithViewPager(mViewPager);
         //set current card and title
         this.mDialogueCard = (DialogueCard) getIntent().getSerializableExtra("selectedCard");
@@ -82,8 +77,10 @@ public class TabActivity extends AppCompatActivity {
             });
         }
         catch (NoSuchFieldException e) {
+            System.out.println("Title Field not found");
         }
         catch (IllegalAccessException e) {
+            System.out.println("Title Field not accessible");
         }
     }
     //indent after newline for bullet point list
@@ -100,8 +97,8 @@ public class TabActivity extends AppCompatActivity {
         list = list.replace("# ", bulletNewline);
         list = list.replace(" #", bulletNewline);
         list = list.replace("#", bulletNewline);
-            SpannableString listFinal = createIndentedText(list, 0,20);
-            return listFinal;
+        SpannableString listFinal = createIndentedText(list, 0,20);
+        return listFinal;
 
     }
     public static void displayCard(String result, String indicators, String reflection, View view){
@@ -110,34 +107,34 @@ public class TabActivity extends AppCompatActivity {
         setReflection(view, reflection);
     }
     public static void setResult(View view, String result){
-        TextView textview = (TextView) view.findViewById(R.id.result);
+        TextView textview = view.findViewById(R.id.result);
         textview.setText(result);
     }
     public static void setIndicators(View view,String indicators){
         SpannableString indicatorsFinal = TabActivity.makeList(indicators);
-        TextView textview = (TextView) view.findViewById(R.id.indicators);
+        TextView textview = view.findViewById(R.id.indicators);
         textview.setText(indicatorsFinal);
     }
     public static void setReflection(View view,String reflection){
         SpannableString reflectionFinal = TabActivity.makeList(reflection);
-        TextView textview = (TextView) view.findViewById(R.id.reflection);
+        TextView textview = view.findViewById(R.id.reflection);
         textview.setText(reflectionFinal);
     }
     private void setBackgroundColors(String theme, Toolbar toolbar, TabLayout tablayout){
-            switch (theme){
-                case "Didactisch Bekwaam":
-                    toolbar.setBackgroundColor(getResources().getColor((R.color.colorDidactisch)));
-                    tabLayout.setBackgroundColor(getResources().getColor((R.color.colorDidactisch)));
-                    break;
-                case "Collegiale Samenwerking":
-                    toolbar.setBackgroundColor(getResources().getColor((R.color.colorCollegiaal)));
-                    tablayout.setBackgroundColor(getResources().getColor((R.color.colorCollegiaal)));
-                    break;
-                case "Pedagogisch Bekwaam":
-                    toolbar.setBackgroundColor(getResources().getColor((R.color.colorPedagogisch)));
-                    tablayout.setBackgroundColor(getResources().getColor((R.color.colorPedagogisch)));
-                    break;
-            }
+        switch (theme){
+            case "Didactisch Bekwaam":
+                toolbar.setBackgroundColor(getResources().getColor((R.color.colorDidactisch)));
+                tabLayout.setBackgroundColor(getResources().getColor((R.color.colorDidactisch)));
+                break;
+            case "Collegiale Samenwerking":
+                toolbar.setBackgroundColor(getResources().getColor((R.color.colorCollegiaal)));
+                tablayout.setBackgroundColor(getResources().getColor((R.color.colorCollegiaal)));
+                break;
+            case "Pedagogisch Bekwaam":
+                toolbar.setBackgroundColor(getResources().getColor((R.color.colorPedagogisch)));
+                tablayout.setBackgroundColor(getResources().getColor((R.color.colorPedagogisch)));
+                break;
+        }
     }
     private void setStatusBarColor(String theme) {
         switch (theme) {
@@ -169,8 +166,8 @@ public class TabActivity extends AppCompatActivity {
 
     public void setUpViewPager(ViewPager viewpager) {
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-        mSectionsPagerAdapter.addFragment(new StartbekwaamFragment(), TITLE_FRAGMENT_STARTBEKWAAM);
-        mSectionsPagerAdapter.addFragment(new BekwaamFragment(),TITLE_FRAGMENT_BEKWAAM );
+        mSectionsPagerAdapter.addFragment(new StartbekwaamFragment(), getString(R.string.startbekwaam));
+        mSectionsPagerAdapter.addFragment(new BekwaamFragment(),getString(R.string.bekwaam) );
         viewpager.setAdapter(mSectionsPagerAdapter);
     }
 }
