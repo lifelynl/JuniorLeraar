@@ -52,4 +52,9 @@ public class Colle extends AppCompatActivity {
             }
         });
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.left_right, R.anim.right_left);
+    }
 }

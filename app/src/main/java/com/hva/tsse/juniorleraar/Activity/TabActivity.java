@@ -170,7 +170,6 @@ public class TabActivity extends AppCompatActivity {
         finish();
         return true;
     }
-    @RequiresApi(api = Build.VERSION_CODES.ECLAIR)
     @Override
     public void onBackPressed() {
         super.onBackPressed();
