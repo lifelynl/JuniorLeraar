@@ -105,6 +105,7 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
                 Intent didaIntent = new Intent(Home.this, Dida.class);
                 Home.this.startActivity(didaIntent);
+                overridePendingTransition(R.anim.enter, R.anim.exit);
             }
         });
 
@@ -113,6 +114,7 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
                 Intent colleIntent = new Intent(Home.this, Colle.class);
                 Home.this.startActivity(colleIntent);
+                overridePendingTransition(R.anim.enter, R.anim.exit);
             }
         });
 
@@ -121,6 +123,7 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
                 Intent pedaIntent = new Intent(Home.this, Peda.class);
                 Home.this.startActivity(pedaIntent);
+                overridePendingTransition(R.anim.enter, R.anim.exit);
             }
         });
 
@@ -129,6 +132,7 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
                 Intent info = new Intent(Home.this, Info.class);
                 Home.this.startActivity(info);
+                overridePendingTransition(R.anim.enter, R.anim.exit);
             }
         });
     }
@@ -162,6 +166,7 @@ public class Home extends AppCompatActivity {
                 item.setIcon(R.drawable.infoicon);
                 Intent intent = new Intent(Home.this, Info.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.enter, R.anim.exit);
                 return true;
     }
 }

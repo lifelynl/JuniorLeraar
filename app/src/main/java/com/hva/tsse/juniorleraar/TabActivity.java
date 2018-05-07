@@ -11,6 +11,7 @@ import android.text.style.LeadingMarginSpan;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
+
 import com.hva.tsse.juniorleraar.adapter.SectionsPagerAdapter;
 import com.hva.tsse.juniorleraar.fragment.BekwaamFragment;
 import com.hva.tsse.juniorleraar.fragment.StartbekwaamFragment;
@@ -89,15 +90,17 @@ public class TabActivity extends AppCompatActivity {
         result.setSpan(new LeadingMarginSpan.Standard(marginFirstLine, marginNextLines),0,text.length(),0);
         return result;
     }
-    //make list with indent
+    //make bulleted list with an indent for every line after a newline (\n)
     private static SpannableString makeList(String list){
         String bullet = "\u2022 ";
         String bulletNewline ="\n\u2022 ";
+        int marginNextLine = 20;
+        int marginFirstLine = 0;
         list = list.replace("$ ", bullet);
         list = list.replace("# ", bulletNewline);
         list = list.replace(" #", bulletNewline);
         list = list.replace("#", bulletNewline);
-        SpannableString listFinal = createIndentedText(list, 0,20);
+        SpannableString listFinal = createIndentedText(list, marginFirstLine,marginNextLine);
         return listFinal;
 
     }
@@ -163,6 +166,11 @@ public class TabActivity extends AppCompatActivity {
         finish();
         return true;
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.left_right, R.anim.right_left);
+        }
 
     public void setUpViewPager(ViewPager viewpager) {
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());

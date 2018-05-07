@@ -46,6 +46,7 @@ public class Colle extends AppCompatActivity {
                 DialogueCard selectedCard = adapter.getItem(position);
                 intent.putExtra("selectedCard", selectedCard);
                 Colle.this.startActivity(intent);
+                overridePendingTransition(R.anim.enter, R.anim.exit);
             }
         });
     }

@@ -45,6 +45,7 @@ public class Dida extends AppCompatActivity {
                 DialogueCard selectedCard = adapter.getItem(position);
                 intent.putExtra("selectedCard", selectedCard);
                 Dida.this.startActivity(intent);
+                overridePendingTransition(R.anim.enter, R.anim.exit);
             }
         });
     }

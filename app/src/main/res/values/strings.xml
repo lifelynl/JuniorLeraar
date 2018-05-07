@@ -16,9 +16,13 @@
     <string name="action_settings">Settings</string>
     <string name="action_info">Info</string>
 
-    <!--tabnames-->
+    <!--tabnames and card titles-->
     <string name="tab_startbekwaam">Startbekwaam</string>
     <string name="tab_bekwaam">Bekwaam</string>
+    <string name="resultTitle">Resultaat</string>
+    <string name="indicatorTitle">De leraar... </string>
+    <string name="reflectionTitle">Reflectievragen</string>
+
 
     <!--Theme-->
     <string name="didactisch_bekwaam">Didactisch Bekwaam</string>

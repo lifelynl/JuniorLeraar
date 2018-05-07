@@ -46,6 +46,7 @@ public class Peda extends AppCompatActivity {
                 DialogueCard selectedCard = adapter.getItem(position);
                 intent.putExtra("selectedCard", selectedCard);
                 Peda.this.startActivity(intent);
+                overridePendingTransition(R.anim.enter, R.anim.exit);
             }
         });
     }
