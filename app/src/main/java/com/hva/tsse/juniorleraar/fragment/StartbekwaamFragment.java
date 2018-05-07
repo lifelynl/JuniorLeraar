@@ -8,10 +8,9 @@ import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.hva.tsse.juniorleraar.R;
-import com.hva.tsse.juniorleraar.TabActivity;
+import com.hva.tsse.juniorleraar.Activity.TabActivity;
 import com.hva.tsse.juniorleraar.data.DataSource;
 import com.hva.tsse.juniorleraar.model.DialogueCard;
 

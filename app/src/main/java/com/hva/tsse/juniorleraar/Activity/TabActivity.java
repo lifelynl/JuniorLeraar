@@ -1,4 +1,4 @@
-package com.hva.tsse.juniorleraar;
+package com.hva.tsse.juniorleraar.Activity;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -11,6 +11,9 @@ import android.text.style.LeadingMarginSpan;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
+
+import com.hva.tsse.juniorleraar.ColorUtils;
+import com.hva.tsse.juniorleraar.R;
 import com.hva.tsse.juniorleraar.adapter.SectionsPagerAdapter;
 import com.hva.tsse.juniorleraar.fragment.BekwaamFragment;
 import com.hva.tsse.juniorleraar.fragment.StartbekwaamFragment;
