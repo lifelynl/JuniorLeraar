@@ -26,8 +26,8 @@ public class DataSource {
      */
     public DataSource(){
 //        if (mDialogueCards==null){
-//            Database data = new Database(context);
-//            mDialogueCards = data.getAllDialogueCards();
+//            Json json = new Json();
+//            mDialogueCards = json.getmDialoguecards();
 //        }
         logList(mDialogueCards);
     }
@@ -39,6 +39,9 @@ public class DataSource {
     public DataSource(List<DialogueCard> mDialogueCards){
         this.mDialogueCards = mDialogueCards;
         logList(mDialogueCards);
+        int count = mDialogueCards.size();
+//        String hoi = count.toString();
+//        Log.w(TAG, count.toString());
     }
 
     /**
