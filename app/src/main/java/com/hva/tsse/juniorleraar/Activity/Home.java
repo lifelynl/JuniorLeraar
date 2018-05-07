@@ -1,4 +1,4 @@
-package com.hva.tsse.juniorleraar;
+package com.hva.tsse.juniorleraar.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.hva.tsse.juniorleraar.R;
 import com.hva.tsse.juniorleraar.data.Json;
 import com.hva.tsse.juniorleraar.model.DialogueCard;
 
@@ -37,7 +38,6 @@ public class Home extends AppCompatActivity {
 //        if (FIRSTRUN) {
 //            Firebase mFirebase = new Firebase();
 //            mFirebase.getData();
-//            Log.w("FIRSTRUN", "FIRSTRUN");
 //            FIRSTRUN = false;
 //        }
 

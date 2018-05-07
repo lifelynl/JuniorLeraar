@@ -1,7 +1,6 @@
 package com.hva.tsse.juniorleraar.data;
 
 import android.content.Context;
-import android.util.Log;
 
 import com.hva.tsse.juniorleraar.model.DialogueCard;
 
@@ -25,11 +24,10 @@ public class DataSource {
      * It is the same so it can be retrieved from everywhere
      */
     public DataSource(){
-//        if (mDialogueCards==null){
-//            Json json = new Json();
-//            mDialogueCards = json.getmDialoguecards();
-//        }
-        logList(mDialogueCards);
+        if (mDialogueCards==null){
+            Json json = new Json(context);
+            mDialogueCards = json.getmDialoguecards();
+        }
     }
 
     /**
@@ -38,10 +36,6 @@ public class DataSource {
      */
     public DataSource(List<DialogueCard> mDialogueCards){
         this.mDialogueCards = mDialogueCards;
-        logList(mDialogueCards);
-        int count = mDialogueCards.size();
-//        String hoi = count.toString();
-//        Log.w(TAG, count.toString());
     }
 
     /**
@@ -65,19 +59,18 @@ public class DataSource {
                 }
             }
         }
-        logList(list);
         return list;
     }
 
-    /**
-     * Log a list to check if the return values are correct
-     * @param list The list you want to log
-     */
-    private void logList(List<DialogueCard> list){
-        for (DialogueCard card : list){
-            Log.w(TAG, card.toString());
-        }
-    }
+//    /**
+//     * Log a list to check if the return values are correct
+//     * @param list The list you want to log
+//     */
+//    private void logList(List<DialogueCard> list){
+//        for (DialogueCard card : list){
+//            Log.w(TAG, card.toString());
+//        }
+//    }
 
     /**
      * @return all the cards not sorted
