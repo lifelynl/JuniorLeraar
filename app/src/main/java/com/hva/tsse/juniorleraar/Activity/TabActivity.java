@@ -1,6 +1,8 @@
-package com.hva.tsse.juniorleraar;
+package com.hva.tsse.juniorleraar.Activity;
 
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +14,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 
+import com.hva.tsse.juniorleraar.ColorUtils;
+import com.hva.tsse.juniorleraar.R;
 import com.hva.tsse.juniorleraar.adapter.SectionsPagerAdapter;
 import com.hva.tsse.juniorleraar.fragment.BekwaamFragment;
 import com.hva.tsse.juniorleraar.fragment.StartbekwaamFragment;
@@ -166,6 +170,7 @@ public class TabActivity extends AppCompatActivity {
         finish();
         return true;
     }
+    @RequiresApi(api = Build.VERSION_CODES.ECLAIR)
     @Override
     public void onBackPressed() {
         super.onBackPressed();

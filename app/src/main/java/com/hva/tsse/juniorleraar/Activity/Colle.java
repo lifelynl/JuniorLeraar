@@ -1,4 +1,4 @@
-package com.hva.tsse.juniorleraar;
+package com.hva.tsse.juniorleraar.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.hva.tsse.juniorleraar.ColorUtils;
+import com.hva.tsse.juniorleraar.R;
 import com.hva.tsse.juniorleraar.adapter.DialogueCardAdapter;
 import com.hva.tsse.juniorleraar.data.DataSource;
 import com.hva.tsse.juniorleraar.model.DialogueCard;

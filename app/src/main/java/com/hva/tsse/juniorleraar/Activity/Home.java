@@ -1,6 +1,8 @@
-package com.hva.tsse.juniorleraar;
+package com.hva.tsse.juniorleraar.Activity;
 
+import android.annotation.TargetApi;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -11,6 +13,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.hva.tsse.juniorleraar.Activity.Colle;
+import com.hva.tsse.juniorleraar.Activity.Dida;
+import com.hva.tsse.juniorleraar.Activity.Info;
+import com.hva.tsse.juniorleraar.Activity.Peda;
+import com.hva.tsse.juniorleraar.R;
 import com.hva.tsse.juniorleraar.data.DataSource;
 import com.hva.tsse.juniorleraar.data.Firebase;
 import com.hva.tsse.juniorleraar.model.DialogueCard;
@@ -101,6 +108,7 @@ public class Home extends AppCompatActivity {
 
         // Nav
         mDidaBtn.setOnClickListener(new View.OnClickListener() {
+            @TargetApi(Build.VERSION_CODES.ECLAIR)
             @Override
             public void onClick(View v) {
                 Intent didaIntent = new Intent(Home.this, Dida.class);
@@ -110,6 +118,7 @@ public class Home extends AppCompatActivity {
         });
 
         mColleBtn.setOnClickListener(new View.OnClickListener() {
+            @TargetApi(Build.VERSION_CODES.ECLAIR)
             @Override
             public void onClick(View v) {
                 Intent colleIntent = new Intent(Home.this, Colle.class);
@@ -119,6 +128,7 @@ public class Home extends AppCompatActivity {
         });
 
         mPedaBtn.setOnClickListener(new View.OnClickListener() {
+            @TargetApi(Build.VERSION_CODES.ECLAIR)
             @Override
             public void onClick(View v) {
                 Intent pedaIntent = new Intent(Home.this, Peda.class);
@@ -163,10 +173,10 @@ public class Home extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-                item.setIcon(R.drawable.infoicon);
-                Intent intent = new Intent(Home.this, Info.class);
-                startActivity(intent);
-                overridePendingTransition(R.anim.enter, R.anim.exit);
-                return true;
+        item.setIcon(R.drawable.infoicon);
+        Intent intent = new Intent(Home.this, Info.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.enter, R.anim.exit);
+        return true;
     }
 }
