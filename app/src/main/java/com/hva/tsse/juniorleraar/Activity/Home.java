@@ -8,15 +8,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.hva.tsse.juniorleraar.Activity.Colle;
-import com.hva.tsse.juniorleraar.Activity.Dida;
-import com.hva.tsse.juniorleraar.Activity.Info;
-import com.hva.tsse.juniorleraar.Activity.Peda;
 import com.hva.tsse.juniorleraar.R;
 import com.hva.tsse.juniorleraar.data.DataSource;
 import com.hva.tsse.juniorleraar.data.Firebase;
@@ -142,7 +137,6 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
                 Intent info = new Intent(Home.this, Info.class);
                 Home.this.startActivity(info);
-                overridePendingTransition(R.anim.enter, R.anim.exit);
             }
         });
     }
@@ -168,15 +162,6 @@ public class Home extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        item.setIcon(R.drawable.infoicon);
-        Intent intent = new Intent(Home.this, Info.class);
-        startActivity(intent);
-        overridePendingTransition(R.anim.enter, R.anim.exit);
         return true;
     }
 }

@@ -16,4 +16,5 @@ public class Info extends AppCompatActivity {
         setContentView(R.layout.activity_info);
         this.setTitle("Info");
     }
+
 }

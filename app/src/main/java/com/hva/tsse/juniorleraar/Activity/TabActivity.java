@@ -1,8 +1,6 @@
 package com.hva.tsse.juniorleraar.Activity;
 
-import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.RequiresApi;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.text.SpannableString;
 import android.text.TextUtils;
 import android.text.style.LeadingMarginSpan;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
@@ -20,6 +19,7 @@ import com.hva.tsse.juniorleraar.adapter.SectionsPagerAdapter;
 import com.hva.tsse.juniorleraar.fragment.BekwaamFragment;
 import com.hva.tsse.juniorleraar.fragment.StartbekwaamFragment;
 import com.hva.tsse.juniorleraar.model.DialogueCard;
+
 import java.lang.reflect.Field;
 
 public class TabActivity extends AppCompatActivity {
@@ -181,6 +181,16 @@ public class TabActivity extends AppCompatActivity {
         mSectionsPagerAdapter.addFragment(new StartbekwaamFragment(), getString(R.string.startbekwaam));
         mSectionsPagerAdapter.addFragment(new BekwaamFragment(),getString(R.string.bekwaam) );
         viewpager.setAdapter(mSectionsPagerAdapter);
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+            overridePendingTransition(R.anim.left_right, R.anim.right_left);
+            return true;
+        }
+        return false;
     }
 }
 
