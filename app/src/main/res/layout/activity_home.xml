@@ -45,63 +45,60 @@
         android:layout_marginStart="32dp"
         android:contentDescription="@string/junior_leraar_logo"
         android:src="@drawable/juniorlogo"
-        app:layout_constraintBottom_toTopOf="@+id/buttons"
+        app:layout_constraintBottom_toTopOf="@+id/btn_didactisch"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hva" />
 
-    <LinearLayout
-        android:id="@+id/buttons"
+    <Button
+        android:id="@+id/btn_didactisch"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="bottom|end"
-        android:orientation="vertical"
-        android:weightSum="3"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:background="@color/colorDidactisch"
+        android:contentDescription="@string/didactisch_bekwaam_knop"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/didactisch_bekwaam"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_pedagogisch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_collegiaal"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:background="#FFD200"
+        android:contentDescription="@string/collegiale_samenwerking_knop"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/collegiale_samenwerking"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/btn_didactisch"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_weight="1"
-            android:background="@color/colorDidactisch"
-            android:contentDescription="@string/didactisch_bekwaam_knop"
-            android:gravity="center"
-            android:onClick="onClick"
-            android:text="@string/didactisch_bekwaam"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp" />
-
-        <Button
-            android:id="@+id/btn_pedagogisch"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_weight="1"
-            android:background="#00A7D3"
-            android:contentDescription="@string/pedagogisch_bekwaam_knop"
-            android:gravity="center"
-            android:onClick="onClick"
-            android:text="@string/pedagogisch_bekwaam"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp" />
-
-        <Button
-            android:id="@+id/btn_collegiaal"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_weight="1"
-            android:background="#FFD200"
-            android:contentDescription="@string/collegiale_samenwerking_knop"
-            android:gravity="center"
-            android:onClick="onClick"
-            android:text="@string/collegiale_samenwerking"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textSize="20sp" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/btn_pedagogisch"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:background="#00A7D3"
+        android:contentDescription="@string/pedagogisch_bekwaam_knop"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/pedagogisch_bekwaam"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_collegiaal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
