@@ -29,7 +29,7 @@ public class Dida extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dida);
         ColorUtils.darkenStatusBar(this, R.color.colorDidactisch);
-        this.setTitle("Didactisch bekwaam");
+        this.setTitle("Didactisch Bekwaam");
 
         list_didactisch_bekwaam = (ListView) findViewById(R.id.list_didactisch_bekwaam);
 
