@@ -35,12 +35,6 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         getSupportActionBar().hide();
 
-//        if (FIRSTRUN) {
-//            Firebase mFirebase = new Firebase();
-//            mFirebase.getData();
-//            FIRSTRUN = false;
-//        }
-
         //Get JSON values from JSON file
         if (FIRSTRUN) {
             mDialoguecards = new ArrayList<>();
