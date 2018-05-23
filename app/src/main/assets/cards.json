@@ -1,4 +1,5 @@
-[
+{
+  "Dialoguecard": [
     {
       "competence": "Motiveren en inspireren van leerlingen",
       "level": "Startbekwaam",
@@ -288,129 +289,130 @@
       "title": "6.4 Analyseren van leerlingvorderingen"
     },
     {
-      "competence" : "Delen en deelnemen",
-      "level" : "Bekwaam",
-      "questionText" : "$ Wat is jouw visie op het werken in een team? # Ben je tevreden over jouw inbreng in het team? # Kun je voorbeelden noemen van initiatieven die je genomen hebt? # Welke feedback heb je van collega’s gekregen op je handelen in de klas? # Welke plannen of speerpunten op school spreken je aan op dit moment? # Op welke manier lever je, of wil je een bijdrage leveren aan de ontwikkeling van de school?",
-      "resultText" : "De leraar heeft een eigen (innovatieve) rol in de school. De leraar levert een bijdrage aan het uitdragen en uitvoeren van het schoolbeleid.",
-      "teacherText" : "$ ontwerpt samen met collega’s lessen en innovatieve leeromgevingen # neemt actief deel aan werkgroepen met collega’s en leidinggevenden over onderwijsprogramma’s en onderwijsinnovatie # vraagt en geeft feedback aan collega’s # neemt initiatief om met collega’s over werkgerelateerde problemen te praten # herkent trends in de ontwikkeling van leerlingen en bespreekt deze in het team",
-      "theme" : "Collegiale Samenwerking",
-      "title" : "1. Delen en deelnemen"
+      "competence": "Delen en deelnemen",
+      "level": "Bekwaam",
+      "questionText": "$ Wat is jouw visie op het werken in een team? # Ben je tevreden over jouw inbreng in het team? # Kun je voorbeelden noemen van initiatieven die je genomen hebt? # Welke feedback heb je van collega’s gekregen op je handelen in de klas? # Welke plannen of speerpunten op school spreken je aan op dit moment? # Op welke manier lever je, of wil je een bijdrage leveren aan de ontwikkeling van de school?",
+      "resultText": "De leraar heeft een eigen (innovatieve) rol in de school. De leraar levert een bijdrage aan het uitdragen en uitvoeren van het schoolbeleid.",
+      "teacherText": "$ ontwerpt samen met collega’s lessen en innovatieve leeromgevingen # neemt actief deel aan werkgroepen met collega’s en leidinggevenden over onderwijsprogramma’s en onderwijsinnovatie # vraagt en geeft feedback aan collega’s # neemt initiatief om met collega’s over werkgerelateerde problemen te praten # herkent trends in de ontwikkeling van leerlingen en bespreekt deze in het team",
+      "theme": "Collegiale Samenwerking",
+      "title": "1. Delen en deelnemen"
     },
     {
-      "competence" : "Doelmatig contact met de omgeving",
-      "level" : "Bekwaam",
-      "questionText" : "$ Hoe ziet de ideale leerling-ouder-school-relatie eruit wat jou betreft? Hoe dicht ben je bij deze ideale leerling-ouder-school-relatie? # Welke vragen leggen ouders je vaak voor? Hoe ga je daarmee om? # Kun je een voorbeeld geven van een prettig of lastig oudercontact? Wat was jouw rol in dit contact? # Kun je voorbeelden geven van lessen of andere aspecten van je werk waarbij je bewust gebruik hebt gemaakt van de rijkdom die de omgeving (bijvoorbeeld de stad Amsterdam) biedt? ",
-      "resultText" : "De leerling ervaart dat zijn verschillende opvoeders op één lijn zitten",
-      "teacherText" : "$ is in gesprek met leerlingen en hun ouders, verzorgers of derden over de leefomgeving van de leerling # neemt initiatief om ouders mede verantwoordelijk te maken voor het pedagogisch klimaat in de school # neemt initiatief om ouders mede verantwoordelijk te maken voor het leerresultaat van de leerling # is in staat eigen grenzen te bewaken in contact met ouders # is conflictvaardig # is zorgvuldig in het (digitaal) delen van bevindingen en dilemma’s met anderen die met jongeren werken ",
-      "theme" : "Collegiale Samenwerking",
-      "title" : "2. Doelmatig contact met de omgeving"
+      "competence": "Doelmatig contact met de omgeving",
+      "level": "Bekwaam",
+      "questionText": "$ Hoe ziet de ideale leerling-ouder-school-relatie eruit wat jou betreft? Hoe dicht ben je bij deze ideale leerling-ouder-school-relatie? # Welke vragen leggen ouders je vaak voor? Hoe ga je daarmee om? # Kun je een voorbeeld geven van een prettig of lastig oudercontact? Wat was jouw rol in dit contact? # Kun je voorbeelden geven van lessen of andere aspecten van je werk waarbij je bewust gebruik hebt gemaakt van de rijkdom die de omgeving (bijvoorbeeld de stad Amsterdam) biedt? ",
+      "resultText": "De leerling ervaart dat zijn verschillende opvoeders op één lijn zitten",
+      "teacherText": "$ is in gesprek met leerlingen en hun ouders, verzorgers of derden over de leefomgeving van de leerling # neemt initiatief om ouders mede verantwoordelijk te maken voor het pedagogisch klimaat in de school # neemt initiatief om ouders mede verantwoordelijk te maken voor het leerresultaat van de leerling # is in staat eigen grenzen te bewaken in contact met ouders # is conflictvaardig # is zorgvuldig in het (digitaal) delen van bevindingen en dilemma’s met anderen die met jongeren werken ",
+      "theme": "Collegiale Samenwerking",
+      "title": "2. Doelmatig contact met de omgeving"
     },
     {
-      "competence" : "Interactie met collega’s",
-      "level" : "Bekwaam",
-      "questionText" : "$ Neem je deel aan trainingen, studiedagen of andere vormen van professionalisering? Op wiens initiatief doe je dat en hoe ga je te werk bij professionalisering? # Op welke manier koppel je het geleerde terug naar het team of naar de leerlingen? # Kun je een voorbeeld geven hoe je samen met collega’s nieuwe kennis en vaardigheden hebt toegepast in de praktijk? # Welke feedback heb je gekregen op de toepassing van nieuwe kennis of vaardigheden?",
-      "resultText" : "Collega’s ervaren dat de leraar actief werkt aan professionalisering passend in het schoolbeleid. Leerlingen ervaren de school als lerende organisatie",
-      "teacherText" : "$ gebruikt persoonlijke reflectie als inspiratiebron voor collega’s # deelt informatie over nieuwe ontwikkelingen in vak en beroep # bespreekt met collega’s de samenwerking met ouders/verzorgers/derden en maakt afspraken op basis van samenwerking # past zijn handelen aan na scholing of feedback",
-      "theme" : "Collegiale Samenwerking",
-      "title" : "3. Interactie met collega’s"
+      "competence": "Interactie met collega’s",
+      "level": "Bekwaam",
+      "questionText": "$ Neem je deel aan trainingen, studiedagen of andere vormen van professionalisering? Op wiens initiatief doe je dat en hoe ga je te werk bij professionalisering? # Op welke manier koppel je het geleerde terug naar het team of naar de leerlingen? # Kun je een voorbeeld geven hoe je samen met collega’s nieuwe kennis en vaardigheden hebt toegepast in de praktijk? # Welke feedback heb je gekregen op de toepassing van nieuwe kennis of vaardigheden?",
+      "resultText": "Collega’s ervaren dat de leraar actief werkt aan professionalisering passend in het schoolbeleid. Leerlingen ervaren de school als lerende organisatie",
+      "teacherText": "$ gebruikt persoonlijke reflectie als inspiratiebron voor collega’s # deelt informatie over nieuwe ontwikkelingen in vak en beroep # bespreekt met collega’s de samenwerking met ouders/verzorgers/derden en maakt afspraken op basis van samenwerking # past zijn handelen aan na scholing of feedback",
+      "theme": "Collegiale Samenwerking",
+      "title": "3. Interactie met collega’s"
     },
     {
-      "competence" : "Delen en deelnemen",
-      "level" : "Startbekwaam",
-      "questionText" : "$ Hoe ziet werken in teamverband er voor jou uit? # Welke meerwaarde ervaar je bij het werken in teamverband in jouw school? # Ben je tevreden over jouw inbreng in het team? # Heb je feedback van je collega’s gekregen op je handelen in de klas? Waaruit bestond die feedback en wat heb je daarmee gedaan? # Wat heb jij van je teamgenoten nodig om goed in een team te kunnen werken? Krijg je dat, en zo niet, hoe maak je dat bespreekbaar? # Op welke manier lever je vanuit eerder verworven competenties een bijdrage aan de ontwikkeling van de school?",
-      "resultText" : "De leraar levert een oplossingsgericht bijdrage aan algemene taken in het team en aan de onderwijskundige en pedagogische ontwikkeling van de school",
- "teacherText" : "$ is op de hoogte van relevante kenmerken van de school en de leerlingen # wisselt met collega’s (innovatieve) kennis en informatie uit # wisselt met collega’s kennis en informatie uit over leerlingen # vervult een actieve rol in teamoverleg en brengt op eigen initiatief onderwerpen in # zoekt stelselmatig naar uitwisseling met collega’s om in samenwerking lessen te optimaliseren # treedt collega’s respectvol tegemoet en houdt rekening met verschillende achtergronden en talenten # stelt teambelang boven eigen belang",
-      "theme" : "Collegiale Samenwerking",
-      "title" : "1. Delen en deelnemen"
+      "competence": "Delen en deelnemen",
+      "level": "Startbekwaam",
+      "questionText": "$ Hoe ziet werken in teamverband er voor jou uit? # Welke meerwaarde ervaar je bij het werken in teamverband in jouw school? # Ben je tevreden over jouw inbreng in het team? # Heb je feedback van je collega’s gekregen op je handelen in de klas? Waaruit bestond die feedback en wat heb je daarmee gedaan? # Wat heb jij van je teamgenoten nodig om goed in een team te kunnen werken? Krijg je dat, en zo niet, hoe maak je dat bespreekbaar? # Op welke manier lever je vanuit eerder verworven competenties een bijdrage aan de ontwikkeling van de school?",
+      "resultText": "De leraar levert een oplossingsgericht bijdrage aan algemene taken in het team en aan de onderwijskundige en pedagogische ontwikkeling van de school",
+      "teacherText": "$ is op de hoogte van relevante kenmerken van de school en de leerlingen # wisselt met collega’s (innovatieve) kennis en informatie uit # wisselt met collega’s kennis en informatie uit over leerlingen # vervult een actieve rol in teamoverleg en brengt op eigen initiatief onderwerpen in # zoekt stelselmatig naar uitwisseling met collega’s om in samenwerking lessen te optimaliseren # treedt collega’s respectvol tegemoet en houdt rekening met verschillende achtergronden en talenten # stelt teambelang boven eigen belang",
+      "theme": "Collegiale Samenwerking",
+      "title": "1. Delen en deelnemen"
     },
     {
-      "competence" : "Doelmatig contact met de omgeving",
-      "level" : "Startbekwaam",
-      "questionText" : "$ Hoe ziet een professionele houding naar derden er volgens jou uit? # Kun je verschillen aangeven tussen de context waarin jij bent opgegroeid en de context waarin je leerlingen opgroeien? Wat doe je met die eventuele verschillen? # Wat zijn voor jou aandachtspunten in het contact met ouders en/of anderen? # Welke gevoelens neem je bij jezelf waar als het gaat om contacten met ouders? # Kun je een voorbeeld geven van een prettig en/of lastig oudergesprek? Wat was jouw rol daarbij? # Wat heb je nodig om je contacten met ouders/verzorgers/instanties te kunnen optimaliseren? # Hoe bewaak je je grenzen? # Kun je een voorbeeld geven van hoe je gebruik hebt gemaakt of zou willen maken van de rijkdom die de omgeving biedt? Denk aan maatschappelijke instanties of culturele instellingen.",
-      "resultText" : "De leraar zoekt contact met de omgeving waar dat uit pedagogisch oogpunt wenselijk is",
-      "teacherText" : "$ stelt zich professioneel op # is op de hoogte van de verschillende instanties die in de omgeving van de school functioneren en die opvang en uitdaging bieden # toont belangstelling voor de context waarin leerlingen opgroeien # toont initiatief in het leggen en onderhouden van contact met de omgeving # benoemt de specifieke kenmerken van de leefomgeving van leerlingen en de buurt waarin de school staat # communiceert op open wijze met ouders/verzorgers/derden # kan samenwerken met anderen ongeacht sociale, etnische en/of culturele achtergronden # poogt culturele verschillen te overbruggen, onder meer door respect te tonen",
-      "theme" : "Collegiale Samenwerking",
-      "title" : "2. Doelmatig contact met de omgeving"
+      "competence": "Doelmatig contact met de omgeving",
+      "level": "Startbekwaam",
+      "questionText": "$ Hoe ziet een professionele houding naar derden er volgens jou uit? # Kun je verschillen aangeven tussen de context waarin jij bent opgegroeid en de context waarin je leerlingen opgroeien? Wat doe je met die eventuele verschillen? # Wat zijn voor jou aandachtspunten in het contact met ouders en/of anderen? # Welke gevoelens neem je bij jezelf waar als het gaat om contacten met ouders? # Kun je een voorbeeld geven van een prettig en/of lastig oudergesprek? Wat was jouw rol daarbij? # Wat heb je nodig om je contacten met ouders/verzorgers/instanties te kunnen optimaliseren? # Hoe bewaak je je grenzen? # Kun je een voorbeeld geven van hoe je gebruik hebt gemaakt of zou willen maken van de rijkdom die de omgeving biedt? Denk aan maatschappelijke instanties of culturele instellingen.",
+      "resultText": "De leraar zoekt contact met de omgeving waar dat uit pedagogisch oogpunt wenselijk is",
+      "teacherText": "$ stelt zich professioneel op # is op de hoogte van de verschillende instanties die in de omgeving van de school functioneren en die opvang en uitdaging bieden # toont belangstelling voor de context waarin leerlingen opgroeien # toont initiatief in het leggen en onderhouden van contact met de omgeving # benoemt de specifieke kenmerken van de leefomgeving van leerlingen en de buurt waarin de school staat # communiceert op open wijze met ouders/verzorgers/derden # kan samenwerken met anderen ongeacht sociale, etnische en/of culturele achtergronden # poogt culturele verschillen te overbruggen, onder meer door respect te tonen",
+      "theme": "Collegiale Samenwerking",
+      "title": "2. Doelmatig contact met de omgeving"
     },
     {
-      "competence" : "Interactie met collega’s",
-      "level" : "Startbekwaam",
-      "questionText" : "$ Kun je een voorbeeld geven van een lastige situatie in je werk waarbij je één of meerdere collega’s om advies hebt gevraagd? Zo ja, wat heb je met dat advies gedaan en hoe kijk je daar op terug? # Welke inzichten over jezelf en je overtuigingen heb je opgedaan in het werken met je collega’s? # Welke vorm van professionalisering vind je nuttig en plezierig? # Neem je deel aan trainingen, studiedagen of andere vormen van professionalisering? Wat betekent dat voor je handelen? # Kun je voorbeelden van ontwikkelactiviteiten noemen die passen binnen jouw ontwikkeling en die van de school?",
-      "resultText" : "De leraar neemt initiatief in interactie met zijn collega’s.",
-      "teacherText" : "$ vraagt collega’s om advies bij lastige situaties in het werk # staat open voor andere visies en ideeën # vraagt systematisch om feedback en reflecteert op eigen handelen # stemt de eigen ontwikkelactiviteiten af op de afspraken in het team en binnen de school # neemt deel aan scholings- en ontwikkelactiviteiten # neemt deel aan collegiale consultatie ",
-      "theme" : "Collegiale Samenwerking",
-      "title" : "3. Interactie met collega’s"
+      "competence": "Interactie met collega’s",
+      "level": "Startbekwaam",
+      "questionText": "$ Kun je een voorbeeld geven van een lastige situatie in je werk waarbij je één of meerdere collega’s om advies hebt gevraagd? Zo ja, wat heb je met dat advies gedaan en hoe kijk je daar op terug? # Welke inzichten over jezelf en je overtuigingen heb je opgedaan in het werken met je collega’s? # Welke vorm van professionalisering vind je nuttig en plezierig? # Neem je deel aan trainingen, studiedagen of andere vormen van professionalisering? Wat betekent dat voor je handelen? # Kun je voorbeelden van ontwikkelactiviteiten noemen die passen binnen jouw ontwikkeling en die van de school?",
+      "resultText": "De leraar neemt initiatief in interactie met zijn collega’s.",
+      "teacherText": "$ vraagt collega’s om advies bij lastige situaties in het werk # staat open voor andere visies en ideeën # vraagt systematisch om feedback en reflecteert op eigen handelen # stemt de eigen ontwikkelactiviteiten af op de afspraken in het team en binnen de school # neemt deel aan scholings- en ontwikkelactiviteiten # neemt deel aan collegiale consultatie ",
+      "theme": "Collegiale Samenwerking",
+      "title": "3. Interactie met collega’s"
     },
     {
-      "competence" : "1 Creëren van een veilig, ordelijk en stimulerend leerklimaat",
-      "level" : "Startbekwaam",
-      "questionText" : "$ Wat betekent een veilig leerklimaat voor jezelf?# Wat betekent een veilig leerklimaat voor de leerlingen?# Kun je het leerklimaat verbinden aan de context van de school? # Hoe zorg je ervoor dat iedere leerling zich welkom voelt in de klas? # Welke theorie over orde houden en klassenmanagement ken je? Naar welke manier van orde houden gaat je voorkeur uit? # Kan je een voorbeeld noemen hoe je stimuleert dat leerlingen op een respectvolle manier met elkaar omgaan? # Maak je leerlingen medeverantwoordelijk voor een ordelijk lesverloop? Zo ja, hoe doe je dat?",
-      "resultText" : "De leraar neemt de verantwoordelijkheid voor een veilig en stimulerend leerklimaat.",
-      "teacherText" : "$ maakt duidelijk welk gedrag hij van leerlingen verwacht # luistert naar wat leerlingen te zeggen hebben # spreekt leerlingen op een positieve manier aan #accepteert dat leerlingen fouten maken # straalt warmte en empathie uit naar alle leerlingen in de klas #stimuleert leerlingen naar elkaar te luisteren # let erop dat leerlingen op een respectvolle manier met elkaar omgaan # houdt rekening met diversiteit en (culturele) verschillen # zorgt ervoor dat leerlingen weten dat ze erbij horen en welkom zijn",
-      "theme" : "Pedagogisch Bekwaam",
-      "title" : "1. Creëren van een veilig, ordelijk en stimulerend leerklimaat"
+      "competence": "1 Creëren van een veilig, ordelijk en stimulerend leerklimaat",
+      "level": "Startbekwaam",
+      "questionText": "$ Wat betekent een veilig leerklimaat voor jezelf?# Wat betekent een veilig leerklimaat voor de leerlingen?# Kun je het leerklimaat verbinden aan de context van de school? # Hoe zorg je ervoor dat iedere leerling zich welkom voelt in de klas? # Welke theorie over orde houden en klassenmanagement ken je? Naar welke manier van orde houden gaat je voorkeur uit? # Kan je een voorbeeld noemen hoe je stimuleert dat leerlingen op een respectvolle manier met elkaar omgaan? # Maak je leerlingen medeverantwoordelijk voor een ordelijk lesverloop? Zo ja, hoe doe je dat?",
+      "resultText": "De leraar neemt de verantwoordelijkheid voor een veilig en stimulerend leerklimaat.",
+      "teacherText": "$ maakt duidelijk welk gedrag hij van leerlingen verwacht # luistert naar wat leerlingen te zeggen hebben # spreekt leerlingen op een positieve manier aan #accepteert dat leerlingen fouten maken # straalt warmte en empathie uit naar alle leerlingen in de klas #stimuleert leerlingen naar elkaar te luisteren # let erop dat leerlingen op een respectvolle manier met elkaar omgaan # houdt rekening met diversiteit en (culturele) verschillen # zorgt ervoor dat leerlingen weten dat ze erbij horen en welkom zijn",
+      "theme": "Pedagogisch Bekwaam",
+      "title": "1. Creëren van een veilig, ordelijk en stimulerend leerklimaat"
     },
     {
-      "competence" : "2 Bevorderen gevoel van competent zijn",
-      "level" : "Startbekwaam",
-      "questionText" : "$ Wat betekent voor jou ‘de leerling voelt zich competent’?# Wat betekent op jouw school ‘je competent voelen’?# Hoe complimenteer je leerlingen?# Hoe zorg je dat ook zwakkere leerlingen zich competent voelen?# Welke leervragen heb je om leerlingen efficiënt en met zelfvertrouwen aan het werk te laten gaan? Welke bronnen zouden je hierbij kunnen helpen?",
-      "resultText" : "De leraar bevordert het gevoel van competent zijn bij leerlingen.",
-      "teacherText" : "$ spreekt positieve verwachtingen uit en daagt leerlingen uit deze waar te maken # complimenteert leerlingen over hun werk # weet wat hij van leerlingen kan verwachten en communiceert dit naar hen# reageert op een positieve wijze op vragen en opmerkingen van leerlingen# richt zich niet alleen op de middenmoot",
-      "theme" : "Pedagogisch Bekwaam",
-      "title" : "2. Bevorderen gevoel van competent zijn"
+      "competence": "2 Bevorderen gevoel van competent zijn",
+      "level": "Startbekwaam",
+      "questionText": "$ Wat betekent voor jou ‘de leerling voelt zich competent’?# Wat betekent op jouw school ‘je competent voelen’?# Hoe complimenteer je leerlingen?# Hoe zorg je dat ook zwakkere leerlingen zich competent voelen?# Welke leervragen heb je om leerlingen efficiënt en met zelfvertrouwen aan het werk te laten gaan? Welke bronnen zouden je hierbij kunnen helpen?",
+      "resultText": "De leraar bevordert het gevoel van competent zijn bij leerlingen.",
+      "teacherText": "$ spreekt positieve verwachtingen uit en daagt leerlingen uit deze waar te maken # complimenteert leerlingen over hun werk # weet wat hij van leerlingen kan verwachten en communiceert dit naar hen# reageert op een positieve wijze op vragen en opmerkingen van leerlingen# richt zich niet alleen op de middenmoot",
+      "theme": "Pedagogisch Bekwaam",
+      "title": "2. Bevorderen gevoel van competent zijn"
     },
     {
-      "competence" : "3 Bevorderen van autonomie",
-      "level" : "Startbekwaam",
-      "questionText" : "$ Wat betekent ‘autonomie van de leerling’ voor jou?# Geef je keuzemogelijkheden in leertaken? Zo ja, welke?# Hoe laat je leerlingen ervaren dat zelfstandigheid wordt gewaardeerd?# Wat heb je nodig om leerlingen meer autonomie bij hun leren te geven? # Wat hebben verschillende leerlingen nodig om meer autonomie te nemen?",
-      "resultText" : "De leraar bevordert de autonomie van leerlingen.",
-      "teacherText" : "$ biedt keuzemogelijkheden in leertaken# biedt keuzemogelijkheden in ondersteunend materiaal# zorgt dat leerlingen zich gewaardeerd voelen",
-      "theme" : "Pedagogisch Bekwaam",
-      "title" : "3. Bevorderen van autonomie"
+      "competence": "3 Bevorderen van autonomie",
+      "level": "Startbekwaam",
+      "questionText": "$ Wat betekent ‘autonomie van de leerling’ voor jou?# Geef je keuzemogelijkheden in leertaken? Zo ja, welke?# Hoe laat je leerlingen ervaren dat zelfstandigheid wordt gewaardeerd?# Wat heb je nodig om leerlingen meer autonomie bij hun leren te geven? # Wat hebben verschillende leerlingen nodig om meer autonomie te nemen?",
+      "resultText": "De leraar bevordert de autonomie van leerlingen.",
+      "teacherText": "$ biedt keuzemogelijkheden in leertaken# biedt keuzemogelijkheden in ondersteunend materiaal# zorgt dat leerlingen zich gewaardeerd voelen",
+      "theme": "Pedagogisch Bekwaam",
+      "title": "3. Bevorderen van autonomie"
     },
     {
-      "competence" : "4 Creëren van een contextrijke leeromgeving",
-      "level" : "Startbekwaam",
-      "questionText" : "$ Kun je een voorbeeld geven van een les, lessenserie of project waarin je bewust hebt gewerkt aan het creëren van een rijke leeromgeving?# Hoe benut je de verschillende achtergronden van leerlingen bij het ontwerpen en uitvoeren van je les?# Welke verschillen zie je tussen jouw achtergrond en die van de leerlingen?# Op welke uitspraken van leerlingen vind je het moeilijk om te reageren? Wat doe je daar mee?# Hoe gebruik je media om je onderwijs meer betekenisvol te maken?",
-      "resultText" : "De leraar creëert een contextrijke leeromgeving die betekenisvol is voor leerlingen.",
-      "teacherText" : "$ gebruikt meerdere contexten om leerlingen met verschillende achtergronden te betrekken bij het leren# stimuleert de belangstelling van leerlingen voor culturen, gebruiken, overtuigingen en talen uit de eigen omgeving# gebruikt nieuwe media om lessen te verrijken en te optimaliseren",
-      "theme" : "Pedagogisch Bekwaam",
-      "title" : "4. Creëren van een contextrijke leeromgeving"
+      "competence": "4 Creëren van een contextrijke leeromgeving",
+      "level": "Startbekwaam",
+      "questionText": "$ Kun je een voorbeeld geven van een les, lessenserie of project waarin je bewust hebt gewerkt aan het creëren van een rijke leeromgeving?# Hoe benut je de verschillende achtergronden van leerlingen bij het ontwerpen en uitvoeren van je les?# Welke verschillen zie je tussen jouw achtergrond en die van de leerlingen?# Op welke uitspraken van leerlingen vind je het moeilijk om te reageren? Wat doe je daar mee?# Hoe gebruik je media om je onderwijs meer betekenisvol te maken?",
+      "resultText": "De leraar creëert een contextrijke leeromgeving die betekenisvol is voor leerlingen.",
+      "teacherText": "$ gebruikt meerdere contexten om leerlingen met verschillende achtergronden te betrekken bij het leren# stimuleert de belangstelling van leerlingen voor culturen, gebruiken, overtuigingen en talen uit de eigen omgeving# gebruikt nieuwe media om lessen te verrijken en te optimaliseren",
+      "theme": "Pedagogisch Bekwaam",
+      "title": "4. Creëren van een contextrijke leeromgeving"
     },
     {
-      "competence" : "1 Creëren van een veilig, ordelijk en stimulerend leerklimaat",
-      "level" : "Bekwaam",
-      "questionText" : "$ Op welke wijze probeer je leerlingen te stimuleren, uit te dagen? Waarom op die wijze?# Wat is je doel voor de leerlingen op sociaal-emotioneel gebied en hoe help je leerlingen zich richting dat doel te ontwikkelen?# Op welke wijze kunnen leerlingen volgens jou verantwoordelijkheid voor elkaar nemen? Hoe stimuleer je dat?# Kun je aangeven op welke wijze je werkt met zwakke leerlingen en met leerlingen die bovengemiddeld tot goed presteren? Waar ligt je voorkeur? Waarom daar?# Vind je jezelf sterk in het begeleiden van zwakke leerlingen of richt je je aandacht liever op de goed presterende leerlingen?# Welke leervragen heb je op het gebied van het realiseren van een veilig en stimulerend leerklimaat?",
-      "resultText" : "De meeste leerlingen voelen zich veilig en worden uitgedaagd om te leren.",
-      "teacherText" : "$ zorgt ervoor dat leerlingen gewaardeerd worden door elkaar en de omgeving # daagt leerlingen uit om verantwoordelijkheid te nemen voor elkaar # laat leerlingen initiatieven nemen en zelfstandig werken",
-      "theme" : "Pedagogisch Bekwaam",
-      "title" : "1. Creëren van een veilig, ordelijk en stimulerend leerklimaat"
+      "competence": "1 Creëren van een veilig, ordelijk en stimulerend leerklimaat",
+      "level": "Bekwaam",
+      "questionText": "$ Op welke wijze probeer je leerlingen te stimuleren, uit te dagen? Waarom op die wijze?# Wat is je doel voor de leerlingen op sociaal-emotioneel gebied en hoe help je leerlingen zich richting dat doel te ontwikkelen?# Op welke wijze kunnen leerlingen volgens jou verantwoordelijkheid voor elkaar nemen? Hoe stimuleer je dat?# Kun je aangeven op welke wijze je werkt met zwakke leerlingen en met leerlingen die bovengemiddeld tot goed presteren? Waar ligt je voorkeur? Waarom daar?# Vind je jezelf sterk in het begeleiden van zwakke leerlingen of richt je je aandacht liever op de goed presterende leerlingen?# Welke leervragen heb je op het gebied van het realiseren van een veilig en stimulerend leerklimaat?",
+      "resultText": "De meeste leerlingen voelen zich veilig en worden uitgedaagd om te leren.",
+      "teacherText": "$ zorgt ervoor dat leerlingen gewaardeerd worden door elkaar en de omgeving # daagt leerlingen uit om verantwoordelijkheid te nemen voor elkaar # laat leerlingen initiatieven nemen en zelfstandig werken",
+      "theme": "Pedagogisch Bekwaam",
+      "title": "1. Creëren van een veilig, ordelijk en stimulerend leerklimaat"
     },
     {
-      "competence" : "2 Bevorderen gevoel van competent zijn",
-      "level" : "Bekwaam",
-      "questionText" : "$ Wat betekent voor jou ‘je competent voelen’?# Welke type vragen stellen de leerlingen: organisatorisch, inhoudelijk of anders? Hoe help je hen om die vragen zelf te beantwoorden?# Hoe zou je – op grond van de feedback of vragen van leerlingen – jouw instructie de volgende keer geven?# Welke leervragen heb je om leerlingen efficiënt en met zelfvertrouwen aan het werk te laten gaan?# Welke literatuur of andere bronnen zouden je hierbij kunnen helpen?",
-      "resultText" : "De meeste leerlingen voelen zich competent om nieuwe leertaken aan te gaan.",
-      "teacherText" : "$ zorgt ervoor dat leerlingen uitgedaagd worden# biedt leerlingen begeleiding bij het beantwoorden van de eigen leervragen# stimuleert leerlingen om feedback te vragen# laat leerlingen de leeropbrengsten en gevoelens daarover benoemen# voert stimulerende gesprekken met leerlingen over de voortgang van hun leren",
-      "theme" : "Pedagogisch Bekwaam",
-      "title" : "2. Bevorderen gevoel van competent zijn"
+      "competence": "2 Bevorderen gevoel van competent zijn",
+      "level": "Bekwaam",
+      "questionText": "$ Wat betekent voor jou ‘je competent voelen’?# Welke type vragen stellen de leerlingen: organisatorisch, inhoudelijk of anders? Hoe help je hen om die vragen zelf te beantwoorden?# Hoe zou je – op grond van de feedback of vragen van leerlingen – jouw instructie de volgende keer geven?# Welke leervragen heb je om leerlingen efficiënt en met zelfvertrouwen aan het werk te laten gaan?# Welke literatuur of andere bronnen zouden je hierbij kunnen helpen?",
+      "resultText": "De meeste leerlingen voelen zich competent om nieuwe leertaken aan te gaan.",
+      "teacherText": "$ zorgt ervoor dat leerlingen uitgedaagd worden# biedt leerlingen begeleiding bij het beantwoorden van de eigen leervragen# stimuleert leerlingen om feedback te vragen# laat leerlingen de leeropbrengsten en gevoelens daarover benoemen# voert stimulerende gesprekken met leerlingen over de voortgang van hun leren",
+      "theme": "Pedagogisch Bekwaam",
+      "title": "2. Bevorderen gevoel van competent zijn"
     },
     {
-      "competence" : "3 Bevorderen van autonomie",
-      "level" : "Bekwaam",
-      "questionText" : "$ Wat betekent ‘zelfstandigheid’ van een leerling voor jou? Zie je voor- en/of nadelen van zelfstandig gedrag in de groep?# Op welke momenten of bij welke fasen van het leerproces verwacht jij initiatief of zelfstandigheid van de leerlingen?# Op welke momenten vind je het beter om zelf de leiding te nemen?# Welke leervragen heb je op het gebied van sturing en loslaten?# Welke literatuur of andere bronnen zouden je hierbij kunnen helpen?",
-      "resultText" : "De meeste leerlingen voelen zich vrij en kunnen zich in zelfstandigheid ontwikkelen.",
-      "teacherText" : "$ laat leerlingen keuzes maken in samenwerkingsvorm, volgorde, hoeveelheid van taken en aard van de taken# laat leerlingen zelf oplossingsrichtingen en stappenplannen bedenken # zorgt dat de meeste leerlingen zich gewaardeerd voelen# ‘modelt’ het op een respectvolle manier met elkaar omgaan",
-      "theme" : "Pedagogisch Bekwaam",
-      "title" : "3. Bevorderen van autonomie"
+      "competence": "3 Bevorderen van autonomie",
+      "level": "Bekwaam",
+      "questionText": "$ Wat betekent ‘zelfstandigheid’ van een leerling voor jou? Zie je voor- en/of nadelen van zelfstandig gedrag in de groep?# Op welke momenten of bij welke fasen van het leerproces verwacht jij initiatief of zelfstandigheid van de leerlingen?# Op welke momenten vind je het beter om zelf de leiding te nemen?# Welke leervragen heb je op het gebied van sturing en loslaten?# Welke literatuur of andere bronnen zouden je hierbij kunnen helpen?",
+      "resultText": "De meeste leerlingen voelen zich vrij en kunnen zich in zelfstandigheid ontwikkelen.",
+      "teacherText": "$ laat leerlingen keuzes maken in samenwerkingsvorm, volgorde, hoeveelheid van taken en aard van de taken# laat leerlingen zelf oplossingsrichtingen en stappenplannen bedenken # zorgt dat de meeste leerlingen zich gewaardeerd voelen# ‘modelt’ het op een respectvolle manier met elkaar omgaan",
+      "theme": "Pedagogisch Bekwaam",
+      "title": "3. Bevorderen van autonomie"
     },
     {
-      "competence" : "4 Creëren van een contextrijke leeromgeving",
-      "level" : "Bekwaam",
-      "questionText" : "$ Welke elementen in de leeromgeving helpen om de nieuwsgierigheid van leerlingen te wekken? Denk bijvoorbeeld aan materialen, inrichting, werkvormen, innovaties.# Kun je een voorbeeld geven van een les, lessenserie of project waarin je bewust hebt gewerkt aan het creëren van een rijke leeromgeving?# Hoe beoordeel je de reacties van leerlingen in termen van betrokkenheid en nieuwsgierigheid? Welke reacties van leerlingen zijn je speciaal opgevallen? Vertel eens waarom.# Welke talenten, interesses, motivatie van leerlingen heb je geobserveerd? Hoe zou je rekening kunnen houden met deze interesses bij je volgende lesontwerp?",
-      "resultText" : "De meeste leerlingen ervaren de inhoud als betekenisvol. Ze zijn nieuwsgierig, betrokken en actief. Ze kunnen nieuwe kennis aan bestaande kennis verbinden.",
-      "teacherText" : "$ biedt een rijke leeromgeving aan in beeld, woord en tekst# traint schoolse taalvaardigheden # heeft kennis van nieuwe media en gebruikt deze# daagt uit tot leren waarbij gebruik wordt gemaakt van verschillende capaciteiten en talenten # laat leerlingen hun stad en omgeving als één van hun bronnen gebruiken# is in staat culturele verschillen tussen leerlingen in te zetten als een verrijking van de leeromgeving # leert de leerling zorg te dragen voor de leeromgeving",
-      "theme" : "Pedagogisch Bekwaam",
-      "title" : "4. Creëren van een contextrijke leeromgeving"
- }
- ]
+      "competence": "4 Creëren van een contextrijke leeromgeving",
+      "level": "Bekwaam",
+      "questionText": "$ Welke elementen in de leeromgeving helpen om de nieuwsgierigheid van leerlingen te wekken? Denk bijvoorbeeld aan materialen, inrichting, werkvormen, innovaties.# Kun je een voorbeeld geven van een les, lessenserie of project waarin je bewust hebt gewerkt aan het creëren van een rijke leeromgeving?# Hoe beoordeel je de reacties van leerlingen in termen van betrokkenheid en nieuwsgierigheid? Welke reacties van leerlingen zijn je speciaal opgevallen? Vertel eens waarom.# Welke talenten, interesses, motivatie van leerlingen heb je geobserveerd? Hoe zou je rekening kunnen houden met deze interesses bij je volgende lesontwerp?",
+      "resultText": "De meeste leerlingen ervaren de inhoud als betekenisvol. Ze zijn nieuwsgierig, betrokken en actief. Ze kunnen nieuwe kennis aan bestaande kennis verbinden.",
+      "teacherText": "$ biedt een rijke leeromgeving aan in beeld, woord en tekst# traint schoolse taalvaardigheden # heeft kennis van nieuwe media en gebruikt deze# daagt uit tot leren waarbij gebruik wordt gemaakt van verschillende capaciteiten en talenten # laat leerlingen hun stad en omgeving als één van hun bronnen gebruiken# is in staat culturele verschillen tussen leerlingen in te zetten als een verrijking van de leeromgeving # leert de leerling zorg te dragen voor de leeromgeving",
+      "theme": "Pedagogisch Bekwaam",
+      "title": "4. Creëren van een contextrijke leeromgeving"
+    }
+  ]
+}
