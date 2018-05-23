@@ -82,7 +82,7 @@ public class Json {
     public String loadJSONFromAsset() {
         String json = null;
         try {
-            InputStream is = context.getAssets().open("junior-leraar-v2.json");
+            InputStream is = context.getAssets().open("cards.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
