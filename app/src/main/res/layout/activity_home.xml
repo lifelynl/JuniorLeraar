@@ -17,9 +17,12 @@
         android:contentDescription="@string/info_knop"
         android:foreground="#25167a"
         android:scaleType="fitEnd"
+        android:tint="#25167a"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_info_details" />
+        app:srcCompat="@android:drawable/ic_menu_info_details"
+        tools:contentDescription="#25167a"
+        tools:srcCompat="@color/colorDidactisch" />
 
     <ImageView
         android:id="@+id/hva"
