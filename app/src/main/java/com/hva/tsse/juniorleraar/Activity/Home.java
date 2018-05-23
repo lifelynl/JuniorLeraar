@@ -38,7 +38,6 @@ public class Home extends AppCompatActivity {
         //Get JSON values from JSON file
         if (FIRSTRUN){
             Json json = new Json(this);
-            json.getJSON();
             FIRSTRUN = false;
         }
 
