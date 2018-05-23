@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.text.SpannableString;
 import android.text.TextUtils;
 import android.text.style.LeadingMarginSpan;
+import android.transition.Transition;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
@@ -98,8 +99,8 @@ public class TabActivity extends AppCompatActivity {
     private static SpannableString makeList(String list){
         String bullet = "\u2022 ";
         String bulletNewline ="\n\u2022 ";
-        int marginNextLine = 20;
         int marginFirstLine = 0;
+        int marginNextLine = 20;
         list = list.replace("$ ", bullet);
         list = list.replace("# ", bulletNewline);
         list = list.replace(" #", bulletNewline);

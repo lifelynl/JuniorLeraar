@@ -14,7 +14,7 @@ import android.widget.ImageView;
 
 import com.hva.tsse.juniorleraar.R;
 import com.hva.tsse.juniorleraar.data.DataSource;
-import com.hva.tsse.juniorleraar.data.Firebase;
+//import com.hva.tsse.juniorleraar.data.Firebase;
 import com.hva.tsse.juniorleraar.model.DialogueCard;
 
 import org.json.JSONArray;
@@ -45,12 +45,12 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         getSupportActionBar().hide();
 
-        if (FIRSTRUN) {
-            Firebase mFirebase = new Firebase();
-            mFirebase.getData();
-            Log.w("FIRSTRUN", "FIRSTRUN");
-            FIRSTRUN = false;
-        }
+//        if (FIRSTRUN) {
+//            Firebase mFirebase = new Firebase();
+//            mFirebase.getData();
+//            Log.w("FIRSTRUN", "FIRSTRUN");
+//            FIRSTRUN = false;
+//        }
 
         //Get JSON values from JSON file
         if (FIRSTRUN) {
