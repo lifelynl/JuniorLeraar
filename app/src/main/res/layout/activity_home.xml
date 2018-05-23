@@ -15,14 +15,11 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:contentDescription="@string/info_knop"
-        android:foreground="#25167a"
         android:scaleType="fitEnd"
         android:tint="#25167a"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_info_details"
-        tools:contentDescription="#25167a"
-        tools:srcCompat="@color/colorDidactisch" />
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
 
     <ImageView
         android:id="@+id/hva"
