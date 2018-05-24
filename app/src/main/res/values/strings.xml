@@ -36,8 +36,7 @@
     <string name="bekwaam_caps">BEKWAAM</string>
     <!--Info-->
     <string name="info">
-        <b>Dialoogkaarten Junior Leraar</b>
-\nDe Junior Leraar app is bedoeld om de ontwikkeling van startende leraren te ondersteunen.
+De Junior Leraar app is bedoeld om de ontwikkeling van startende leraren te ondersteunen.
 \n\nDe app bevat de Dialoogkaarten die ontwikkeld zijn binnen het project Junior Leraar van de HvA en kan gebruikt worden als reflectie-instrument en als handvat tijdens begeleidingsgesprekken tussen een startende leraar en een begeleider, of tussen een student-in-opleiding en een begeleider.
 \n\nDe basis van de app zijn 23 bekwaamheden voor startende leraren. Die bekwaamheden zijn geordend rond drie domeinen: pedagogisch bekwaam, didactisch bekwaam en collegiale samenwerking.
 \n\nElke bekwaamheid is op twee niveaus uitgewerkt:
@@ -49,10 +48,11 @@
 \n\n3. Tenslotte volgt een aantal reflectievragen. De coach kan deze vragen gebruiken bij het reflectiegesprek. De reflectievragen geven de mogelijkheid om stil te staan bij en het gesprek te voeren over de onderliggende kennis, opvattingen, overtuigingen of identiteit. De reflectievragen nodigen op deze wijze uit tot een open dialoog. De reflectievragen zijn bedoeld als suggestie voor deze dialoog en kunnen aangevuld worden met eigen vragen die aansluiten bij de situatie en ontwikkelvragen van de starter.
 \n
 \nDe app is bedoeld voor startende leraren, leraren in opleiding en hun coaches/begeleiders, zowel in het basisonderwijs als het voortgezet onderwijs. Meer informatie is te vinden op www.hva.nl/juniorleraar.
-\n\n© Hogeschool van Amsterdam
-        \nPostbus 1025\n1000 BA Amsterdam\n020-595 1400\nservicedesk-ict@hva.nl
     </string>
+    <string name="contact">© Hogeschool van Amsterdam
+        \nPostbus 1025\n1000 BA Amsterdam\n020-595 1400\nservicedesk-ict@hva.nl</string>
     <string name="info_knop">Info knop</string>
+    <string name="info_title"> <b>Dialoogkaarten Junior Leraar</b> </string>
     <string name="hogeschool_van_amsterdam_logo">Hogeschool van Amsterdam logo</string>
     <string name="junior_leraar_logo">Junior Leraar logo</string>
     <string name="didactisch_bekwaam_knop">Didactisch Bekwaam knop</string>

@@ -1,8 +1,13 @@
 package com.hva.tsse.juniorleraar.Activity;
 
 import android.content.Intent;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -52,6 +57,16 @@ public class Colle extends AppCompatActivity {
                 overridePendingTransition(R.anim.enter, R.anim.exit);
             }
         });
+
+        //title text color
+        Spannable text = new SpannableString(this.getTitle());
+        final Drawable upArrow = getResources().getDrawable(R.drawable.abc_ic_ab_back_material);
+        upArrow.setColorFilter(getResources().getColor(R.color.colorPrimary), PorterDuff.Mode.SRC_ATOP);
+        getSupportActionBar().setHomeAsUpIndicator(upArrow);
+        text.setSpan(new ForegroundColorSpan(getResources().getColor(R.color.colorPrimary)), 0, text.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+
+
+        this.setTitle(text);
     }
     //transition overrides
     @Override

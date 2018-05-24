@@ -8,6 +8,7 @@
     <color name="colorDidactisch">#25167a</color>
     <color name="colorDidAccent">#3225167a</color>
     <color name="colorDid60">#3225167a</color>
+    <color name="colorDidTab">#9025167a</color>
 
     <color name="colorCollegiaal">#FFD200</color>
     <color name="colorCollAccent">#CCFFD200</color>
@@ -16,4 +17,5 @@
     <color name="colorPedagogisch">#00A7D3</color>
     <color name="colorPedAccent">#CC00A7D3</color>
     <color name="colorPed60">#5600a7d3</color>
+    <color name="white">#fff</color>
 </resources>

@@ -1,5 +1,6 @@
 package com.hva.tsse.juniorleraar.Activity;
 
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -8,7 +9,6 @@ import android.support.v7.widget.Toolbar;
 import android.text.SpannableString;
 import android.text.TextUtils;
 import android.text.style.LeadingMarginSpan;
-import android.transition.Transition;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
@@ -47,6 +47,7 @@ public class TabActivity extends AppCompatActivity {
         setUpViewPager(mViewPager);
         tabLayout = findViewById(R.id.tablayout);
         tabLayout.setupWithViewPager(mViewPager);
+
         //set current card and title
         this.mDialogueCard = (DialogueCard) getIntent().getSerializableExtra("selectedCard");
         String mainTitle = this.mDialogueCard.getTitle();
@@ -54,6 +55,12 @@ public class TabActivity extends AppCompatActivity {
         String theme = this.mDialogueCard.getTheme();
         setBackgroundColors(theme, toolbar, tabLayout);
         setStatusBarColor(theme);
+        //set primary color instead on tabs
+        if(theme.equals(getString(R.string.collegiale_samenwerking))) {
+            tabLayout.setTabTextColors(getResources().getColor(R.color.colorDidTab), getResources().getColor(R.color.colorPrimary));
+            tabLayout.setSelectedTabIndicatorColor(getResources().getColor(R.color.colorPrimary));
+            toolbar.getNavigationIcon().setColorFilter(getResources().getColor(R.color.colorPrimary), PorterDuff.Mode.SRC_ATOP);
+        }
         //Displaying long titles
         try {
             Field f = toolbar.getClass().getDeclaredField("mTitleTextView");
@@ -68,6 +75,10 @@ public class TabActivity extends AppCompatActivity {
             toolbarTextView.setMarqueeRepeatLimit(1);
             // set text on Textview
             toolbarTextView.setText(mainTitle);
+            //set color for collegiaal
+            if(theme.equals(getString(R.string.collegiale_samenwerking))) {
+                    toolbarTextView.setTextColor(getResources().getColor(R.color.colorPrimary));
+                }
             toolbar.setOnTouchListener(new View.OnTouchListener() {
                 @Override
                 public boolean onTouch(View v, MotionEvent event) {
