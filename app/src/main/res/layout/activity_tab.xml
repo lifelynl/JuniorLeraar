@@ -37,26 +37,24 @@
             android:textAllCaps="false"
             app:tabIndicatorColor="@android:color/white"
             app:tabIndicatorHeight="2dp"
-            app:tabSelectedTextColor="@android:color/white"
-           >
+            app:tabSelectedTextColor="@android:color/white">
 
             <android.support.design.widget.TabItem
                 android:id="@+id/tab_startbekwaam"
+                textAllCaps="false"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tab_startbekwaam"
-                android:textAllCaps="false"
-                textAllCaps="false"
-/>
+                android:textAllCaps="false" />
+
             <android.support.design.widget.TabItem
                 android:id="@+id/tab_bekwaam"
+                textAllCaps="false"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:contentDescription="@string/bekwaam_knop"
                 android:text="@string/tab_bekwaam"
-                android:textAllCaps="false"
-                textAllCaps="false"
-                />
+                android:textAllCaps="false" />
         </android.support.design.widget.TabLayout>
 
     </android.support.design.widget.AppBarLayout>
@@ -64,7 +62,7 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 </android.support.design.widget.CoordinatorLayout>
